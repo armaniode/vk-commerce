@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconCopyFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path fillRule="evenodd" clipRule="evenodd" d="M8 2C5.79 2 4 3.79 4 6V14C4 16.21 5.79 18 8 18H12C14.21 18 16 16.21 16 14V6C16 3.79 14.21 2 12 2H8ZM11.88 21.92C10.2 21.92 8.76 20.97 8.17 19.5H13.48C15.69 19.5 17.48 17.71 17.48 15.5V6.28C18.95 6.87 20 8.31 20 10V17.45C20 19.25 17.97 21.92 15.35 21.92H11.88Z" fill="currentColor"/>
+    </svg>
+  );
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconMinusSquareFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M16.51 3H7.44C4.99 3 3 4.99 3 7.44V16.51C3 18.96 4.99 20.95 7.44 20.95H16.51C18.96 20.95 20.95 18.96 20.95 16.51V7.44C20.95 4.99 18.96 3 16.51 3ZM14.55 12.86H9.54C9.06 12.86 8.66 12.47 8.66 11.98C8.66 11.49 9.05 11.1 9.54 11.1H14.55C15.03 11.1 15.43 11.49 15.43 11.98C15.43 12.47 15.04 12.86 14.55 12.86Z" fill="currentColor"/>
+    </svg>
+  );
+}

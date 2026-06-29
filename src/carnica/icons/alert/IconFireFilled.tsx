@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconFireFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M11.88 20.79C8.08 20.79 5 17.71 5 13.92C5 11.53 6.25 9.27 8.26 8.02L8.69 7.75L9.23 7.99C9.44 8.1 9.6 8.29 9.68 8.51C10 6.69 10.8 4.49 12.75 3.27L13.19 3L13.73 3.23C14.04 3.4 14.24 3.71 14.25 4.06V4.07C14.3 5.65 15.16 6.7 16.16 7.91C17.37 9.39 18.75 11.07 18.75 13.92C18.75 17.71 15.67 20.79 11.88 20.79Z" fill="currentColor"/>
+    </svg>
+  );
+}

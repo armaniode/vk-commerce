@@ -1,0 +1,10 @@
+export { IconBus } from './IconBus';
+export { IconBusFilled } from './IconBusFilled';
+export { IconCar } from './IconCar';
+export { IconCarFilled } from './IconCarFilled';
+export { IconPlane } from './IconPlane';
+export { IconPlaneFilled } from './IconPlaneFilled';
+export { IconPump } from './IconPump';
+export { IconPumpFilled } from './IconPumpFilled';
+export { IconTrain } from './IconTrain';
+export { IconTrainFilled } from './IconTrainFilled';

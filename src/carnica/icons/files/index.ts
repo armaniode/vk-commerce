@@ -1,0 +1,14 @@
+export { IconFileDoc } from './IconFileDoc';
+export { IconFileDocFilled } from './IconFileDocFilled';
+export { IconFileDocx } from './IconFileDocx';
+export { IconFileDocxFilled } from './IconFileDocxFilled';
+export { IconFileImg } from './IconFileImg';
+export { IconFileImgFilled } from './IconFileImgFilled';
+export { IconFileJpeg } from './IconFileJpeg';
+export { IconFileJpegFilled } from './IconFileJpegFilled';
+export { IconFileJpg } from './IconFileJpg';
+export { IconFileJpgFilled } from './IconFileJpgFilled';
+export { IconFilePdf } from './IconFilePdf';
+export { IconFilePdfFilled } from './IconFilePdfFilled';
+export { IconFilePng } from './IconFilePng';
+export { IconFilePngFilled } from './IconFilePngFilled';

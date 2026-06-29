@@ -1,0 +1,14 @@
+export { IconArchive } from './IconArchive';
+export { IconArchiveFilled } from './IconArchiveFilled';
+export { IconDesk } from './IconDesk';
+export { IconDeskCrossed } from './IconDeskCrossed';
+export { IconDeskCrossedFilled } from './IconDeskCrossedFilled';
+export { IconDeskFilled } from './IconDeskFilled';
+export { IconDocFill } from './IconDocFill';
+export { IconDocFillFilled } from './IconDocFillFilled';
+export { IconFileEmpty } from './IconFileEmpty';
+export { IconFileEmptyFilled } from './IconFileEmptyFilled';
+export { IconFileFill } from './IconFileFill';
+export { IconFileFillFilled } from './IconFileFillFilled';
+export { IconPassport } from './IconPassport';
+export { IconPassportFilled } from './IconPassportFilled';

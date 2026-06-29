@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconChevronLeft(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M14.35 18.9C14.35 18.7 14.25 18.5 14.15 18.3L8.75 12C8.75 12 8.75 11.9 8.75 11.8L14.15 5.5C14.45 5.1 14.45 4.6 14.05 4.3C13.75 3.9 13.15 3.9 12.85 4.3L7.45 10.7C6.85 11.4 6.85 12.4 7.45 13.1L12.85 19.4C13.15 19.8 13.75 19.8 14.05 19.5C14.25 19.4 14.35 19.1 14.35 18.9Z" fill="currentColor"/>
+    </svg>
+  );
+}

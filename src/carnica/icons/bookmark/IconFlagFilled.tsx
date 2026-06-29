@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconFlagFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M4.88 20.75C4.39 20.75 4 20.36 4 19.88V4.38C4 4.06 4 3.66 4.33 3.33C4.66 3 5.06 3 5.38 3H17.5C18.23 3 18.98 3 19.25 3.74C19.52 4.48 18.94 4.96 18.38 5.43L14.2 8.91L18.51 12.87C19.02 13.34 19.55 13.83 19.27 14.54C18.99 15.25 18.28 15.25 17.58 15.25H5.75V19.88C5.75 20.36 5.36 20.75 4.88 20.75Z" fill="currentColor"/>
+    </svg>
+  );
+}

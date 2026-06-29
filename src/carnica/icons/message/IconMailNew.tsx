@@ -1,0 +1,10 @@
+import type { SVGProps } from 'react';
+
+export function IconMailNew(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M16.8 8.5L12.6 11.6C12.2 11.9 11.7 11.9 11.3 11.6L7 8.5C6.6 8.3 6.1 8.3 5.8 8.7C5.5 9.1 5.6 9.7 6 10L10.2 13C10.7 13.4 11.3 13.6 11.9 13.6C12.5 13.6 13.1 13.4 13.6 13L17.8 10C18.2 9.7 18.3 9.2 18 8.8C17.7 8.3 17.1 8.3 16.8 8.5Z" fill="currentColor"/>
+      <path d="M17.4 4H6.4C4 4 2 6 2 8.4V15.4C2 17.8 4 19.8 6.4 19.8H17.4C19.8 19.8 21.8 17.8 21.8 15.4V8.4C21.8 6 19.8 4 17.4 4ZM20 15.4C20 16.9 18.8 18 17.4 18H6.4C4.9 18 3.8 16.8 3.8 15.4V8.4C3.8 6.9 5 5.8 6.4 5.8H17.4C18.9 5.8 20 7 20 8.4V15.4Z" fill="currentColor"/>
+    </svg>
+  );
+}

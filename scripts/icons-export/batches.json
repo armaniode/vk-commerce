@@ -1,0 +1,1507 @@
+{
+  "totalItems": 350,
+  "batchSize": 18,
+  "totalBatches": 20,
+  "batches": [
+    {
+      "batchIdx": 0,
+      "items": [
+        {
+          "id": "1508:31",
+          "tsxName": "IconPlusRoundStroke"
+        },
+        {
+          "id": "1508:33",
+          "tsxName": "IconPlusRound"
+        },
+        {
+          "id": "1508:35",
+          "tsxName": "IconPlusRoundFilled"
+        },
+        {
+          "id": "1508:38",
+          "tsxName": "IconMinusRoundStroke"
+        },
+        {
+          "id": "1508:40",
+          "tsxName": "IconMinusRound"
+        },
+        {
+          "id": "1508:42",
+          "tsxName": "IconMinusRoundFilled"
+        },
+        {
+          "id": "1508:45",
+          "tsxName": "IconCloseRoundStroke"
+        },
+        {
+          "id": "1508:47",
+          "tsxName": "IconCloseRound"
+        },
+        {
+          "id": "1508:49",
+          "tsxName": "IconCloseRoundFilled"
+        },
+        {
+          "id": "952:47",
+          "tsxName": "IconBanRound"
+        },
+        {
+          "id": "952:49",
+          "tsxName": "IconBanRoundFilled"
+        },
+        {
+          "id": "952:52",
+          "tsxName": "IconDotsRoundStroke"
+        },
+        {
+          "id": "952:54",
+          "tsxName": "IconDotsRound"
+        },
+        {
+          "id": "952:56",
+          "tsxName": "IconDotsRoundFilled"
+        },
+        {
+          "id": "952:59",
+          "tsxName": "IconPlusSquare"
+        },
+        {
+          "id": "952:61",
+          "tsxName": "IconPlusSquareFilled"
+        },
+        {
+          "id": "952:64",
+          "tsxName": "IconMinusSquare"
+        },
+        {
+          "id": "952:66",
+          "tsxName": "IconMinusSquareFilled"
+        }
+      ]
+    },
+    {
+      "batchIdx": 1,
+      "items": [
+        {
+          "id": "952:69",
+          "tsxName": "IconCloseSquare"
+        },
+        {
+          "id": "952:71",
+          "tsxName": "IconCloseSquareFilled"
+        },
+        {
+          "id": "952:74",
+          "tsxName": "IconCheckSquare"
+        },
+        {
+          "id": "952:76",
+          "tsxName": "IconCheckSquareFilled"
+        },
+        {
+          "id": "952:79",
+          "tsxName": "IconKeySquare"
+        },
+        {
+          "id": "952:81",
+          "tsxName": "IconKeySquareFilled"
+        },
+        {
+          "id": "952:223",
+          "tsxName": "IconLock"
+        },
+        {
+          "id": "952:225",
+          "tsxName": "IconLockFilled"
+        },
+        {
+          "id": "952:84",
+          "tsxName": "IconLockOpen"
+        },
+        {
+          "id": "952:86",
+          "tsxName": "IconLockOpenFilled"
+        },
+        {
+          "id": "952:89",
+          "tsxName": "IconLockClose"
+        },
+        {
+          "id": "952:91",
+          "tsxName": "IconLockCloseFilled"
+        },
+        {
+          "id": "952:94",
+          "tsxName": "IconLockCheck"
+        },
+        {
+          "id": "952:96",
+          "tsxName": "IconLockCheckFilled"
+        },
+        {
+          "id": "686:152",
+          "tsxName": "IconSettings"
+        },
+        {
+          "id": "686:154",
+          "tsxName": "IconSettingsFilled"
+        },
+        {
+          "id": "952:99",
+          "tsxName": "IconInfo"
+        },
+        {
+          "id": "952:101",
+          "tsxName": "IconInfoFilled"
+        }
+      ]
+    },
+    {
+      "batchIdx": 2,
+      "items": [
+        {
+          "id": "952:104",
+          "tsxName": "IconQuestion"
+        },
+        {
+          "id": "952:106",
+          "tsxName": "IconQuestionFilled"
+        },
+        {
+          "id": "952:109",
+          "tsxName": "IconCheck"
+        },
+        {
+          "id": "952:111",
+          "tsxName": "IconCheckFilled"
+        },
+        {
+          "id": "952:114",
+          "tsxName": "IconVolumeUp"
+        },
+        {
+          "id": "952:116",
+          "tsxName": "IconVolumeUpFilled"
+        },
+        {
+          "id": "952:243",
+          "tsxName": "IconVolumeOff"
+        },
+        {
+          "id": "952:245",
+          "tsxName": "IconVolumeOffFilled"
+        },
+        {
+          "id": "952:119",
+          "tsxName": "IconScreenMenu"
+        },
+        {
+          "id": "952:121",
+          "tsxName": "IconScreenMenuFilled"
+        },
+        {
+          "id": "952:124",
+          "tsxName": "IconScreenMenu1"
+        },
+        {
+          "id": "952:126",
+          "tsxName": "IconScreenMenu1Filled"
+        },
+        {
+          "id": "952:129",
+          "tsxName": "IconLayers"
+        },
+        {
+          "id": "952:131",
+          "tsxName": "IconLayersFilled"
+        },
+        {
+          "id": "952:134",
+          "tsxName": "IconCopy"
+        },
+        {
+          "id": "952:136",
+          "tsxName": "IconCopyFilled"
+        },
+        {
+          "id": "686:58",
+          "tsxName": "IconScannerQr"
+        },
+        {
+          "id": "686:61",
+          "tsxName": "IconScannerQrFilled"
+        }
+      ]
+    },
+    {
+      "batchIdx": 3,
+      "items": [
+        {
+          "id": "952:228",
+          "tsxName": "IconSearch"
+        },
+        {
+          "id": "952:230",
+          "tsxName": "IconSearchFilled"
+        },
+        {
+          "id": "952:233",
+          "tsxName": "IconTrash"
+        },
+        {
+          "id": "952:235",
+          "tsxName": "IconTrashFilled"
+        },
+        {
+          "id": "952:139",
+          "tsxName": "IconPower"
+        },
+        {
+          "id": "952:141",
+          "tsxName": "IconPowerFilled"
+        },
+        {
+          "id": "686:84",
+          "tsxName": "IconEditPencil"
+        },
+        {
+          "id": "686:87",
+          "tsxName": "IconEditPencilFilled"
+        },
+        {
+          "id": "952:144",
+          "tsxName": "IconShare"
+        },
+        {
+          "id": "952:146",
+          "tsxName": "IconShareFilled"
+        },
+        {
+          "id": "1230:119",
+          "tsxName": "IconLogin"
+        },
+        {
+          "id": "1230:121",
+          "tsxName": "IconLoginFilled"
+        },
+        {
+          "id": "1230:126",
+          "tsxName": "IconLogout"
+        },
+        {
+          "id": "1230:124",
+          "tsxName": "IconLogoutFilled"
+        },
+        {
+          "id": "2284:522",
+          "tsxName": "IconTool"
+        },
+        {
+          "id": "2284:524",
+          "tsxName": "IconToolFilled"
+        },
+        {
+          "id": "1209:32",
+          "tsxName": "IconBurgerMenu"
+        },
+        {
+          "id": "1209:38",
+          "tsxName": "IconSettings1"
+        }
+      ]
+    },
+    {
+      "batchIdx": 4,
+      "items": [
+        {
+          "id": "1209:30",
+          "tsxName": "IconLoading"
+        },
+        {
+          "id": "1209:34",
+          "tsxName": "IconRefresh"
+        },
+        {
+          "id": "1209:36",
+          "tsxName": "IconPaperclip"
+        },
+        {
+          "id": "686:97",
+          "tsxName": "IconDanger"
+        },
+        {
+          "id": "686:100",
+          "tsxName": "IconDangerFilled"
+        },
+        {
+          "id": "952:238",
+          "tsxName": "IconBell"
+        },
+        {
+          "id": "952:240",
+          "tsxName": "IconBellFilled"
+        },
+        {
+          "id": "952:188",
+          "tsxName": "IconFire"
+        },
+        {
+          "id": "952:190",
+          "tsxName": "IconFireFilled"
+        },
+        {
+          "id": "1119:68",
+          "tsxName": "IconFileFill"
+        },
+        {
+          "id": "1119:70",
+          "tsxName": "IconFileFillFilled"
+        },
+        {
+          "id": "1119:73",
+          "tsxName": "IconFileEmpty"
+        },
+        {
+          "id": "1119:75",
+          "tsxName": "IconFileEmptyFilled"
+        },
+        {
+          "id": "1119:78",
+          "tsxName": "IconDesk"
+        },
+        {
+          "id": "1119:80",
+          "tsxName": "IconDeskFilled"
+        },
+        {
+          "id": "3295:750",
+          "tsxName": "IconDeskCrossed"
+        },
+        {
+          "id": "3295:663",
+          "tsxName": "IconDeskCrossedFilled"
+        },
+        {
+          "id": "1119:83",
+          "tsxName": "IconArchive"
+        }
+      ]
+    },
+    {
+      "batchIdx": 5,
+      "items": [
+        {
+          "id": "1119:85",
+          "tsxName": "IconArchiveFilled"
+        },
+        {
+          "id": "1119:88",
+          "tsxName": "IconDocFill"
+        },
+        {
+          "id": "1119:90",
+          "tsxName": "IconDocFillFilled"
+        },
+        {
+          "id": "1119:93",
+          "tsxName": "IconPassport"
+        },
+        {
+          "id": "1119:95",
+          "tsxName": "IconPassportFilled"
+        },
+        {
+          "id": "2284:467",
+          "tsxName": "IconRouter"
+        },
+        {
+          "id": "2284:469",
+          "tsxName": "IconRouterFilled"
+        },
+        {
+          "id": "2284:527",
+          "tsxName": "IconTv"
+        },
+        {
+          "id": "2284:529",
+          "tsxName": "IconTvFilled"
+        },
+        {
+          "id": "2609:688",
+          "tsxName": "IconTablet"
+        },
+        {
+          "id": "2609:687",
+          "tsxName": "IconTabletFilled"
+        },
+        {
+          "id": "2610:760",
+          "tsxName": "IconKeyboard"
+        },
+        {
+          "id": "2610:761",
+          "tsxName": "IconKeyboardFilled"
+        },
+        {
+          "id": "2618:962",
+          "tsxName": "IconWatch"
+        },
+        {
+          "id": "2618:963",
+          "tsxName": "IconWatchFilled"
+        },
+        {
+          "id": "2618:1010",
+          "tsxName": "IconNotebook"
+        },
+        {
+          "id": "2618:1009",
+          "tsxName": "IconNotebookFilled"
+        },
+        {
+          "id": "1119:128",
+          "tsxName": "IconShield"
+        }
+      ]
+    },
+    {
+      "batchIdx": 6,
+      "items": [
+        {
+          "id": "1119:130",
+          "tsxName": "IconShieldFilled"
+        },
+        {
+          "id": "1119:133",
+          "tsxName": "IconCheckShield"
+        },
+        {
+          "id": "1119:135",
+          "tsxName": "IconCheckShieldFilled"
+        },
+        {
+          "id": "1119:138",
+          "tsxName": "IconCloseShield"
+        },
+        {
+          "id": "1119:140",
+          "tsxName": "IconCloseShieldFilled"
+        },
+        {
+          "id": "1119:148",
+          "tsxName": "IconEyeClose"
+        },
+        {
+          "id": "1119:150",
+          "tsxName": "IconEyeCloseFilled"
+        },
+        {
+          "id": "1119:143",
+          "tsxName": "IconEyeOpen"
+        },
+        {
+          "id": "1119:145",
+          "tsxName": "IconEyeOpenFilled"
+        },
+        {
+          "id": "2610:780",
+          "tsxName": "IconFaceId"
+        },
+        {
+          "id": "2610:781",
+          "tsxName": "IconFaceIdFilled"
+        },
+        {
+          "id": "3098:613",
+          "tsxName": "IconFingerprintFilled"
+        },
+        {
+          "id": "3098:615",
+          "tsxName": "IconFingerprint"
+        },
+        {
+          "id": "1119:168",
+          "tsxName": "IconSaleCoupon"
+        },
+        {
+          "id": "1119:170",
+          "tsxName": "IconSaleCouponFilled"
+        },
+        {
+          "id": "1119:163",
+          "tsxName": "IconBag"
+        },
+        {
+          "id": "1119:165",
+          "tsxName": "IconBagFilled"
+        },
+        {
+          "id": "1119:153",
+          "tsxName": "IconHome"
+        }
+      ]
+    },
+    {
+      "batchIdx": 7,
+      "items": [
+        {
+          "id": "1119:155",
+          "tsxName": "IconHomeFilled"
+        },
+        {
+          "id": "1119:158",
+          "tsxName": "IconBasket"
+        },
+        {
+          "id": "1119:160",
+          "tsxName": "IconBasketFilled"
+        },
+        {
+          "id": "2618:987",
+          "tsxName": "IconShoppingBag"
+        },
+        {
+          "id": "2618:986",
+          "tsxName": "IconShoppingBagFilled"
+        },
+        {
+          "id": "2719:613",
+          "tsxName": "IconPercent"
+        },
+        {
+          "id": "6652:698",
+          "tsxName": "IconX5Points"
+        },
+        {
+          "id": "6652:700",
+          "tsxName": "IconX5PointsReceived"
+        },
+        {
+          "id": "1119:188",
+          "tsxName": "IconUser"
+        },
+        {
+          "id": "1119:190",
+          "tsxName": "IconUserFilled"
+        },
+        {
+          "id": "1119:193",
+          "tsxName": "IconUserAdd"
+        },
+        {
+          "id": "1119:195",
+          "tsxName": "IconUserAddFilled"
+        },
+        {
+          "id": "1119:198",
+          "tsxName": "IconUsersGroup"
+        },
+        {
+          "id": "1119:200",
+          "tsxName": "IconUsersGroupFilled"
+        },
+        {
+          "id": "1119:284",
+          "tsxName": "IconChevronRight"
+        },
+        {
+          "id": "1119:282",
+          "tsxName": "IconChevronLeft"
+        },
+        {
+          "id": "1119:278",
+          "tsxName": "IconChevronUp"
+        },
+        {
+          "id": "1119:280",
+          "tsxName": "IconChevronDown"
+        }
+      ]
+    },
+    {
+      "batchIdx": 8,
+      "items": [
+        {
+          "id": "1614:169",
+          "tsxName": "IconArrowRight"
+        },
+        {
+          "id": "1614:167",
+          "tsxName": "IconArrowLeft"
+        },
+        {
+          "id": "1614:163",
+          "tsxName": "IconArrowUp"
+        },
+        {
+          "id": "1614:165",
+          "tsxName": "IconArrowDown"
+        },
+        {
+          "id": "1637:172",
+          "tsxName": "IconArrowUpRight"
+        },
+        {
+          "id": "1637:170",
+          "tsxName": "IconArrowUpLeft"
+        },
+        {
+          "id": "1637:166",
+          "tsxName": "IconArrowDownLeft"
+        },
+        {
+          "id": "1637:168",
+          "tsxName": "IconArrowDownRight"
+        },
+        {
+          "id": "1209:42",
+          "tsxName": "IconSwap"
+        },
+        {
+          "id": "1209:44",
+          "tsxName": "IconExpand"
+        },
+        {
+          "id": "1209:40",
+          "tsxName": "IconCollapse"
+        },
+        {
+          "id": "2284:428",
+          "tsxName": "IconRightArrow"
+        },
+        {
+          "id": "2284:430",
+          "tsxName": "IconRightArrowFilled"
+        },
+        {
+          "id": "2284:433",
+          "tsxName": "IconLeftArrow"
+        },
+        {
+          "id": "2284:435",
+          "tsxName": "IconLeftArrowFilled"
+        },
+        {
+          "id": "2284:438",
+          "tsxName": "IconDoubleRightArrow"
+        },
+        {
+          "id": "2284:440",
+          "tsxName": "IconDoubleRightArrowFilled"
+        },
+        {
+          "id": "1119:213",
+          "tsxName": "IconTime"
+        }
+      ]
+    },
+    {
+      "batchIdx": 9,
+      "items": [
+        {
+          "id": "1119:215",
+          "tsxName": "IconTimeFilled"
+        },
+        {
+          "id": "1119:218",
+          "tsxName": "IconSpeed"
+        },
+        {
+          "id": "1119:220",
+          "tsxName": "IconSpeedFilled"
+        },
+        {
+          "id": "1119:223",
+          "tsxName": "IconCalendar"
+        },
+        {
+          "id": "1119:225",
+          "tsxName": "IconCalendarFilled"
+        },
+        {
+          "id": "1119:268",
+          "tsxName": "IconMailNew"
+        },
+        {
+          "id": "1119:270",
+          "tsxName": "IconMailNewFilled"
+        },
+        {
+          "id": "1119:310",
+          "tsxName": "IconDotsMessage"
+        },
+        {
+          "id": "1119:312",
+          "tsxName": "IconDotsMessageFilled"
+        },
+        {
+          "id": "1119:263",
+          "tsxName": "IconMailOpen"
+        },
+        {
+          "id": "1119:265",
+          "tsxName": "IconMailOpenFilled"
+        },
+        {
+          "id": "1119:315",
+          "tsxName": "IconQuestionMessage"
+        },
+        {
+          "id": "1119:317",
+          "tsxName": "IconQuestionMessageFilled"
+        },
+        {
+          "id": "1119:243",
+          "tsxName": "IconDotsMessage1"
+        },
+        {
+          "id": "1119:245",
+          "tsxName": "IconDotsMessage1Filled"
+        },
+        {
+          "id": "1119:253",
+          "tsxName": "IconQuestionMessage1"
+        },
+        {
+          "id": "1119:255",
+          "tsxName": "IconQuestionMessage1Filled"
+        },
+        {
+          "id": "1119:233",
+          "tsxName": "IconChatMessage"
+        }
+      ]
+    },
+    {
+      "batchIdx": 10,
+      "items": [
+        {
+          "id": "1119:235",
+          "tsxName": "IconChatMessageFilled"
+        },
+        {
+          "id": "1119:238",
+          "tsxName": "IconChatPlusMessage"
+        },
+        {
+          "id": "1119:240",
+          "tsxName": "IconChatPlusMessageFilled"
+        },
+        {
+          "id": "1119:248",
+          "tsxName": "IconChatAddMessage"
+        },
+        {
+          "id": "1119:250",
+          "tsxName": "IconChatAddMessageFilled"
+        },
+        {
+          "id": "1119:258",
+          "tsxName": "IconSend"
+        },
+        {
+          "id": "1119:260",
+          "tsxName": "IconSendFilled"
+        },
+        {
+          "id": "686:46",
+          "tsxName": "IconPhone"
+        },
+        {
+          "id": "686:48",
+          "tsxName": "IconPhoneFilled"
+        },
+        {
+          "id": "686:78",
+          "tsxName": "IconCallSilent"
+        },
+        {
+          "id": "686:81",
+          "tsxName": "IconCallSilentFilled"
+        },
+        {
+          "id": "3295:703",
+          "tsxName": "IconCallingOnCrossed"
+        },
+        {
+          "id": "3295:666",
+          "tsxName": "IconCallingOnCrossedFilled"
+        },
+        {
+          "id": "686:90",
+          "tsxName": "IconCallingOn"
+        },
+        {
+          "id": "686:93",
+          "tsxName": "IconCallingOnFilled"
+        },
+        {
+          "id": "686:103",
+          "tsxName": "IconCallingOff"
+        },
+        {
+          "id": "686:106",
+          "tsxName": "IconCallingOffFilled"
+        },
+        {
+          "id": "2285:171",
+          "tsxName": "IconPhoneCallTransfer"
+        }
+      ]
+    },
+    {
+      "batchIdx": 11,
+      "items": [
+        {
+          "id": "2285:173",
+          "tsxName": "IconPhoneCallTransferFilled"
+        },
+        {
+          "id": "2285:166",
+          "tsxName": "IconPhoneCallOut"
+        },
+        {
+          "id": "2285:168",
+          "tsxName": "IconPhoneCallOutFilled"
+        },
+        {
+          "id": "2285:161",
+          "tsxName": "IconPhoneCallIn"
+        },
+        {
+          "id": "2285:163",
+          "tsxName": "IconPhoneCallInFilled"
+        },
+        {
+          "id": "952:168",
+          "tsxName": "IconCamera"
+        },
+        {
+          "id": "952:170",
+          "tsxName": "IconCameraFilled"
+        },
+        {
+          "id": "952:183",
+          "tsxName": "IconVideo"
+        },
+        {
+          "id": "952:185",
+          "tsxName": "IconVideoFilled"
+        },
+        {
+          "id": "952:163",
+          "tsxName": "IconHeadphones"
+        },
+        {
+          "id": "952:165",
+          "tsxName": "IconHeadphonesFilled"
+        },
+        {
+          "id": "952:158",
+          "tsxName": "IconSound"
+        },
+        {
+          "id": "952:160",
+          "tsxName": "IconSoundFilled"
+        },
+        {
+          "id": "952:173",
+          "tsxName": "IconImageBox"
+        },
+        {
+          "id": "952:175",
+          "tsxName": "IconImageBoxFilled"
+        },
+        {
+          "id": "952:208",
+          "tsxName": "IconPlay"
+        },
+        {
+          "id": "952:210",
+          "tsxName": "IconPlayFilled"
+        },
+        {
+          "id": "952:218",
+          "tsxName": "IconStop"
+        }
+      ]
+    },
+    {
+      "batchIdx": 12,
+      "items": [
+        {
+          "id": "952:220",
+          "tsxName": "IconStopFilled"
+        },
+        {
+          "id": "952:213",
+          "tsxName": "IconStopAndPlay"
+        },
+        {
+          "id": "952:215",
+          "tsxName": "IconStopAndPlayFilled"
+        },
+        {
+          "id": "952:178",
+          "tsxName": "IconVideoFile"
+        },
+        {
+          "id": "952:180",
+          "tsxName": "IconVideoFileFilled"
+        },
+        {
+          "id": "952:149",
+          "tsxName": "IconMic"
+        },
+        {
+          "id": "952:151",
+          "tsxName": "IconMicFilled"
+        },
+        {
+          "id": "3295:737",
+          "tsxName": "IconMicCrossed"
+        },
+        {
+          "id": "3295:665",
+          "tsxName": "IconMicCrossedFilled"
+        },
+        {
+          "id": "952:155",
+          "tsxName": "IconMicAlt"
+        },
+        {
+          "id": "952:153",
+          "tsxName": "IconMicAltFilled"
+        },
+        {
+          "id": "1230:107",
+          "tsxName": "IconExport"
+        },
+        {
+          "id": "1230:109",
+          "tsxName": "IconExportFilled"
+        },
+        {
+          "id": "1230:113",
+          "tsxName": "IconImport"
+        },
+        {
+          "id": "1230:115",
+          "tsxName": "IconImportFilled"
+        },
+        {
+          "id": "1119:228",
+          "tsxName": "IconEsim"
+        },
+        {
+          "id": "1119:230",
+          "tsxName": "IconEsimFilled"
+        },
+        {
+          "id": "1380:102",
+          "tsxName": "IconSim"
+        }
+      ]
+    },
+    {
+      "batchIdx": 13,
+      "items": [
+        {
+          "id": "1380:104",
+          "tsxName": "IconSimFilled"
+        },
+        {
+          "id": "1119:307",
+          "tsxName": "IconIPhone"
+        },
+        {
+          "id": "1119:305",
+          "tsxName": "IconIPhoneFilled"
+        },
+        {
+          "id": "2284:497",
+          "tsxName": "IconWifi"
+        },
+        {
+          "id": "2284:499",
+          "tsxName": "IconWifiFilled"
+        },
+        {
+          "id": "2284:507",
+          "tsxName": "IconWifiAlt"
+        },
+        {
+          "id": "2284:509",
+          "tsxName": "IconWifiAltFilled"
+        },
+        {
+          "id": "1119:322",
+          "tsxName": "IconMoon"
+        },
+        {
+          "id": "1119:320",
+          "tsxName": "IconMoonFilled"
+        },
+        {
+          "id": "1119:332",
+          "tsxName": "IconRain"
+        },
+        {
+          "id": "1119:330",
+          "tsxName": "IconRainFilled"
+        },
+        {
+          "id": "2576:224",
+          "tsxName": "IconCloud"
+        },
+        {
+          "id": "2576:226",
+          "tsxName": "IconCloudFilled"
+        },
+        {
+          "id": "1119:327",
+          "tsxName": "IconSun"
+        },
+        {
+          "id": "1119:325",
+          "tsxName": "IconSunFilled"
+        },
+        {
+          "id": "1508:57",
+          "tsxName": "IconLightning"
+        },
+        {
+          "id": "1508:59",
+          "tsxName": "IconLightningFilled"
+        },
+        {
+          "id": "1508:62",
+          "tsxName": "IconLightningCrossed"
+        }
+      ]
+    },
+    {
+      "batchIdx": 14,
+      "items": [
+        {
+          "id": "1508:64",
+          "tsxName": "IconLightningCrossedFilled"
+        },
+        {
+          "id": "1380:143",
+          "tsxName": "IconHoneycombs"
+        },
+        {
+          "id": "1380:145",
+          "tsxName": "IconHoneycombsFilled"
+        },
+        {
+          "id": "2284:472",
+          "tsxName": "IconStudy"
+        },
+        {
+          "id": "2284:474",
+          "tsxName": "IconStudyFilled"
+        },
+        {
+          "id": "2284:482",
+          "tsxName": "IconHotel"
+        },
+        {
+          "id": "2284:484",
+          "tsxName": "IconHotelFilled"
+        },
+        {
+          "id": "2286:208",
+          "tsxName": "IconHoneyComb"
+        },
+        {
+          "id": "2286:210",
+          "tsxName": "IconHoneyCombFilled"
+        },
+        {
+          "id": "2286:212",
+          "tsxName": "IconHoneyCombStyle3"
+        },
+        {
+          "id": "2286:215",
+          "tsxName": "IconOrange"
+        },
+        {
+          "id": "2286:217",
+          "tsxName": "IconOrangeStyle2"
+        },
+        {
+          "id": "1119:183",
+          "tsxName": "IconCoupon"
+        },
+        {
+          "id": "1119:185",
+          "tsxName": "IconCouponFilled"
+        },
+        {
+          "id": "1119:173",
+          "tsxName": "IconRobot"
+        },
+        {
+          "id": "1119:175",
+          "tsxName": "IconRobotFilled"
+        },
+        {
+          "id": "3295:679",
+          "tsxName": "IconRobotCrossed"
+        },
+        {
+          "id": "3295:664",
+          "tsxName": "IconRobotCrossedFilled"
+        }
+      ]
+    },
+    {
+      "batchIdx": 15,
+      "items": [
+        {
+          "id": "1119:178",
+          "tsxName": "IconGamepad"
+        },
+        {
+          "id": "1119:180",
+          "tsxName": "IconGamepadFilled"
+        },
+        {
+          "id": "1119:273",
+          "tsxName": "IconGift"
+        },
+        {
+          "id": "1119:275",
+          "tsxName": "IconGiftFilled"
+        },
+        {
+          "id": "1119:98",
+          "tsxName": "IconCard"
+        },
+        {
+          "id": "1119:100",
+          "tsxName": "IconCardFilled"
+        },
+        {
+          "id": "1119:103",
+          "tsxName": "IconWallet"
+        },
+        {
+          "id": "1119:105",
+          "tsxName": "IconWalletFilled"
+        },
+        {
+          "id": "1119:108",
+          "tsxName": "IconCoins"
+        },
+        {
+          "id": "1119:110",
+          "tsxName": "IconCoinsFilled"
+        },
+        {
+          "id": "686:40",
+          "tsxName": "IconCalculator"
+        },
+        {
+          "id": "686:43",
+          "tsxName": "IconCalculatorFilled"
+        },
+        {
+          "id": "686:51",
+          "tsxName": "IconCase"
+        },
+        {
+          "id": "686:54",
+          "tsxName": "IconCaseFilled"
+        },
+        {
+          "id": "2949:607",
+          "tsxName": "IconBank"
+        },
+        {
+          "id": "2949:609",
+          "tsxName": "IconBankFilled"
+        },
+        {
+          "id": "2949:612",
+          "tsxName": "IconCash"
+        },
+        {
+          "id": "2949:614",
+          "tsxName": "IconCashFilled"
+        }
+      ]
+    },
+    {
+      "batchIdx": 16,
+      "items": [
+        {
+          "id": "8033:1164",
+          "tsxName": "IconFilePdf"
+        },
+        {
+          "id": "8033:1165",
+          "tsxName": "IconFilePdfFilled"
+        },
+        {
+          "id": "8033:1168",
+          "tsxName": "IconFileDoc"
+        },
+        {
+          "id": "8033:1167",
+          "tsxName": "IconFileDocFilled"
+        },
+        {
+          "id": "8033:1171",
+          "tsxName": "IconFileDocx"
+        },
+        {
+          "id": "8033:1170",
+          "tsxName": "IconFileDocxFilled"
+        },
+        {
+          "id": "8033:1174",
+          "tsxName": "IconFileImg"
+        },
+        {
+          "id": "8033:1173",
+          "tsxName": "IconFileImgFilled"
+        },
+        {
+          "id": "8033:1177",
+          "tsxName": "IconFileJpeg"
+        },
+        {
+          "id": "8033:1176",
+          "tsxName": "IconFileJpegFilled"
+        },
+        {
+          "id": "8033:1180",
+          "tsxName": "IconFileJpg"
+        },
+        {
+          "id": "8033:1179",
+          "tsxName": "IconFileJpgFilled"
+        },
+        {
+          "id": "8033:1183",
+          "tsxName": "IconFilePng"
+        },
+        {
+          "id": "8033:1182",
+          "tsxName": "IconFilePngFilled"
+        },
+        {
+          "id": "1119:113",
+          "tsxName": "IconMark"
+        },
+        {
+          "id": "1119:115",
+          "tsxName": "IconMarkFilled"
+        },
+        {
+          "id": "1119:118",
+          "tsxName": "IconCompas"
+        },
+        {
+          "id": "1119:120",
+          "tsxName": "IconCompasFilled"
+        }
+      ]
+    },
+    {
+      "batchIdx": 17,
+      "items": [
+        {
+          "id": "1119:123",
+          "tsxName": "IconGlobe"
+        },
+        {
+          "id": "1119:125",
+          "tsxName": "IconGlobeFilled"
+        },
+        {
+          "id": "2284:462",
+          "tsxName": "IconPlane"
+        },
+        {
+          "id": "2284:464",
+          "tsxName": "IconPlaneFilled"
+        },
+        {
+          "id": "2284:512",
+          "tsxName": "IconCar"
+        },
+        {
+          "id": "2284:514",
+          "tsxName": "IconCarFilled"
+        },
+        {
+          "id": "2284:517",
+          "tsxName": "IconTrain"
+        },
+        {
+          "id": "2284:519",
+          "tsxName": "IconTrainFilled"
+        },
+        {
+          "id": "2284:532",
+          "tsxName": "IconBus"
+        },
+        {
+          "id": "2284:534",
+          "tsxName": "IconBusFilled"
+        },
+        {
+          "id": "2284:492",
+          "tsxName": "IconPump"
+        },
+        {
+          "id": "2284:494",
+          "tsxName": "IconPumpFilled"
+        },
+        {
+          "id": "952:193",
+          "tsxName": "IconChart"
+        },
+        {
+          "id": "952:195",
+          "tsxName": "IconChartFilled"
+        },
+        {
+          "id": "952:198",
+          "tsxName": "IconChartAlt"
+        },
+        {
+          "id": "952:200",
+          "tsxName": "IconChartAltFilled"
+        },
+        {
+          "id": "952:203",
+          "tsxName": "IconPieChart"
+        },
+        {
+          "id": "952:205",
+          "tsxName": "IconPieChartFilled"
+        }
+      ]
+    },
+    {
+      "batchIdx": 18,
+      "items": [
+        {
+          "id": "1119:58",
+          "tsxName": "IconCheckRound"
+        },
+        {
+          "id": "1119:60",
+          "tsxName": "IconCheckRoundFilled"
+        },
+        {
+          "id": "1119:63",
+          "tsxName": "IconCheckMark"
+        },
+        {
+          "id": "1119:65",
+          "tsxName": "IconDoubleCheckMark"
+        },
+        {
+          "id": "1119:28",
+          "tsxName": "IconHeart"
+        },
+        {
+          "id": "1119:30",
+          "tsxName": "IconHeartFilled"
+        },
+        {
+          "id": "1119:53",
+          "tsxName": "IconLabel"
+        },
+        {
+          "id": "1119:55",
+          "tsxName": "IconLabelFilled"
+        },
+        {
+          "id": "1119:33",
+          "tsxName": "IconBrokenHeart"
+        },
+        {
+          "id": "1119:35",
+          "tsxName": "IconBrokenHeartFilled"
+        },
+        {
+          "id": "1119:38",
+          "tsxName": "IconFlag"
+        },
+        {
+          "id": "1119:40",
+          "tsxName": "IconFlagFilled"
+        },
+        {
+          "id": "1119:43",
+          "tsxName": "IconPin"
+        },
+        {
+          "id": "1119:45",
+          "tsxName": "IconPinFilled"
+        },
+        {
+          "id": "1119:48",
+          "tsxName": "IconBookmark"
+        },
+        {
+          "id": "1119:50",
+          "tsxName": "IconBookmarkFilled"
+        },
+        {
+          "id": "686:66",
+          "tsxName": "IconStar"
+        },
+        {
+          "id": "686:68",
+          "tsxName": "IconStarHalfFilled"
+        }
+      ]
+    },
+    {
+      "batchIdx": 19,
+      "items": [
+        {
+          "id": "686:70",
+          "tsxName": "IconStarFilled"
+        },
+        {
+          "id": "2284:487",
+          "tsxName": "IconBook"
+        },
+        {
+          "id": "2284:489",
+          "tsxName": "IconBookFilled"
+        },
+        {
+          "id": "3561:7196",
+          "tsxName": "IconThumbsUp"
+        },
+        {
+          "id": "3561:7198",
+          "tsxName": "IconThumbsUpFilled"
+        },
+        {
+          "id": "3561:7201",
+          "tsxName": "IconThumbsDown"
+        },
+        {
+          "id": "3561:7203",
+          "tsxName": "IconThumbsDownFilled"
+        },
+        {
+          "id": "2284:502",
+          "tsxName": "IconInfinite"
+        }
+      ]
+    }
+  ]
+}

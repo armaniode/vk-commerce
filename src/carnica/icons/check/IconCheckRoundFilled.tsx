@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconCheckRoundFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M12 3C7.04 3 3 7.04 3 12C3 16.96 7.04 21 12 21C16.96 21 21 16.96 21 12C21 7.04 16.97 3 12 3ZM15.62 10.62L11.62 14.62C11.45 14.79 11.23 14.88 11 14.88C10.77 14.88 10.55 14.8 10.38 14.62L8.38 12.62C8.04 12.28 8.04 11.72 8.38 11.38C8.72 11.04 9.28 11.04 9.62 11.38L11 12.77L14.38 9.39C14.72 9.05 15.28 9.05 15.62 9.39C15.96 9.73 15.96 10.28 15.62 10.62Z" fill="currentColor"/>
+    </svg>
+  );
+}

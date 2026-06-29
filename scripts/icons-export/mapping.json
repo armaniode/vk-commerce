@@ -1,0 +1,2813 @@
+{
+  "_stats": {
+    "totalFigmaSets": 181,
+    "totalTsxFiles": 180,
+    "mappedPairs": 350,
+    "mappedExisting": 180,
+    "mappedNewFiles": 170,
+    "unmatchedFigma": 14,
+    "unmatchedTsx": 0
+  },
+  "mapping": [
+    {
+      "figmaSet": "plus round",
+      "figmaVariant": "style=stroke",
+      "variantId": "1508:31",
+      "tsxName": "IconPlusRoundStroke",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "plus round",
+      "figmaVariant": "style=outline",
+      "variantId": "1508:33",
+      "tsxName": "IconPlusRound",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "plus round",
+      "figmaVariant": "style=filled",
+      "variantId": "1508:35",
+      "tsxName": "IconPlusRoundFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "minus round",
+      "figmaVariant": "style=stroke",
+      "variantId": "1508:38",
+      "tsxName": "IconMinusRoundStroke",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "minus round",
+      "figmaVariant": "style=outline",
+      "variantId": "1508:40",
+      "tsxName": "IconMinusRound",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "minus round",
+      "figmaVariant": "style=filled",
+      "variantId": "1508:42",
+      "tsxName": "IconMinusRoundFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "close round",
+      "figmaVariant": "style=stroke",
+      "variantId": "1508:45",
+      "tsxName": "IconCloseRoundStroke",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "close round",
+      "figmaVariant": "style=outline",
+      "variantId": "1508:47",
+      "tsxName": "IconCloseRound",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "close round",
+      "figmaVariant": "style=filled",
+      "variantId": "1508:49",
+      "tsxName": "IconCloseRoundFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "ban round",
+      "figmaVariant": "style=outline",
+      "variantId": "952:47",
+      "tsxName": "IconBanRound",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "ban round",
+      "figmaVariant": "style=filled",
+      "variantId": "952:49",
+      "tsxName": "IconBanRoundFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "dots round",
+      "figmaVariant": "style=stroke",
+      "variantId": "952:52",
+      "tsxName": "IconDotsRoundStroke",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "dots round",
+      "figmaVariant": "style=outline",
+      "variantId": "952:54",
+      "tsxName": "IconDotsRound",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "dots round",
+      "figmaVariant": "style=filled",
+      "variantId": "952:56",
+      "tsxName": "IconDotsRoundFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "plus square",
+      "figmaVariant": "style=outline",
+      "variantId": "952:59",
+      "tsxName": "IconPlusSquare",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "plus square",
+      "figmaVariant": "style=filled",
+      "variantId": "952:61",
+      "tsxName": "IconPlusSquareFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "minus square",
+      "figmaVariant": "style=outline",
+      "variantId": "952:64",
+      "tsxName": "IconMinusSquare",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "minus square",
+      "figmaVariant": "style=filled",
+      "variantId": "952:66",
+      "tsxName": "IconMinusSquareFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "close square",
+      "figmaVariant": "style=outline",
+      "variantId": "952:69",
+      "tsxName": "IconCloseSquare",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "close square",
+      "figmaVariant": "style=filled",
+      "variantId": "952:71",
+      "tsxName": "IconCloseSquareFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "check square",
+      "figmaVariant": "style=outline",
+      "variantId": "952:74",
+      "tsxName": "IconCheckSquare",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "check square",
+      "figmaVariant": "style=filled",
+      "variantId": "952:76",
+      "tsxName": "IconCheckSquareFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "key square",
+      "figmaVariant": "style=outline",
+      "variantId": "952:79",
+      "tsxName": "IconKeySquare",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "key square",
+      "figmaVariant": "style=filled",
+      "variantId": "952:81",
+      "tsxName": "IconKeySquareFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "lock",
+      "figmaVariant": "style=outline",
+      "variantId": "952:223",
+      "tsxName": "IconLock",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "lock",
+      "figmaVariant": "style=filled",
+      "variantId": "952:225",
+      "tsxName": "IconLockFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "lock open",
+      "figmaVariant": "style=outline",
+      "variantId": "952:84",
+      "tsxName": "IconLockOpen",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "lock open",
+      "figmaVariant": "style=filled",
+      "variantId": "952:86",
+      "tsxName": "IconLockOpenFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "lock close",
+      "figmaVariant": "style=outline",
+      "variantId": "952:89",
+      "tsxName": "IconLockClose",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "lock close",
+      "figmaVariant": "style=filled",
+      "variantId": "952:91",
+      "tsxName": "IconLockCloseFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "lock check",
+      "figmaVariant": "style=outline",
+      "variantId": "952:94",
+      "tsxName": "IconLockCheck",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "lock check",
+      "figmaVariant": "style=filled",
+      "variantId": "952:96",
+      "tsxName": "IconLockCheckFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "settings",
+      "figmaVariant": "style=outline",
+      "variantId": "686:152",
+      "tsxName": "IconSettings",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "settings",
+      "figmaVariant": "style=filled",
+      "variantId": "686:154",
+      "tsxName": "IconSettingsFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "info",
+      "figmaVariant": "style=outline",
+      "variantId": "952:99",
+      "tsxName": "IconInfo",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "info",
+      "figmaVariant": "style=filled",
+      "variantId": "952:101",
+      "tsxName": "IconInfoFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "question",
+      "figmaVariant": "style=outline",
+      "variantId": "952:104",
+      "tsxName": "IconQuestion",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "question",
+      "figmaVariant": "style=filled",
+      "variantId": "952:106",
+      "tsxName": "IconQuestionFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "check",
+      "figmaVariant": "style=outline",
+      "variantId": "952:109",
+      "tsxName": "IconCheck",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "check",
+      "figmaVariant": "style=filled",
+      "variantId": "952:111",
+      "tsxName": "IconCheckFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "Volume up",
+      "figmaVariant": "style=outline",
+      "variantId": "952:114",
+      "tsxName": "IconVolumeUp",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "Volume up",
+      "figmaVariant": "style=filled",
+      "variantId": "952:116",
+      "tsxName": "IconVolumeUpFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "Volume off",
+      "figmaVariant": "style=outline",
+      "variantId": "952:243",
+      "tsxName": "IconVolumeOff",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "Volume off",
+      "figmaVariant": "style=filled",
+      "variantId": "952:245",
+      "tsxName": "IconVolumeOffFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "screen menu",
+      "figmaVariant": "style=outline",
+      "variantId": "952:119",
+      "tsxName": "IconScreenMenu",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "screen menu",
+      "figmaVariant": "style=filled",
+      "variantId": "952:121",
+      "tsxName": "IconScreenMenuFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "screen menu 2",
+      "figmaVariant": "style=outline",
+      "variantId": "952:124",
+      "tsxName": "IconScreenMenu1",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "screen menu 2",
+      "figmaVariant": "style=filled",
+      "variantId": "952:126",
+      "tsxName": "IconScreenMenu1Filled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "layers",
+      "figmaVariant": "style=outline",
+      "variantId": "952:129",
+      "tsxName": "IconLayers",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "layers",
+      "figmaVariant": "style=filled",
+      "variantId": "952:131",
+      "tsxName": "IconLayersFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "copy",
+      "figmaVariant": "style=outline",
+      "variantId": "952:134",
+      "tsxName": "IconCopy",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "copy",
+      "figmaVariant": "style=filled",
+      "variantId": "952:136",
+      "tsxName": "IconCopyFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "scanner qr",
+      "figmaVariant": "style=outline",
+      "variantId": "686:58",
+      "tsxName": "IconScannerQr",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "scanner qr",
+      "figmaVariant": "style=filled",
+      "variantId": "686:61",
+      "tsxName": "IconScannerQrFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "search",
+      "figmaVariant": "style=outline",
+      "variantId": "952:228",
+      "tsxName": "IconSearch",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "search",
+      "figmaVariant": "style=filled",
+      "variantId": "952:230",
+      "tsxName": "IconSearchFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "trash",
+      "figmaVariant": "style=outline",
+      "variantId": "952:233",
+      "tsxName": "IconTrash",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "trash",
+      "figmaVariant": "style=filled",
+      "variantId": "952:235",
+      "tsxName": "IconTrashFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "power",
+      "figmaVariant": "style=outline",
+      "variantId": "952:139",
+      "tsxName": "IconPower",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "power",
+      "figmaVariant": "style=filled",
+      "variantId": "952:141",
+      "tsxName": "IconPowerFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "edit pencil",
+      "figmaVariant": "style=outline",
+      "variantId": "686:84",
+      "tsxName": "IconEditPencil",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "edit pencil",
+      "figmaVariant": "style=filled",
+      "variantId": "686:87",
+      "tsxName": "IconEditPencilFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "share",
+      "figmaVariant": "style=outline",
+      "variantId": "952:144",
+      "tsxName": "IconShare",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "share",
+      "figmaVariant": "style=filled",
+      "variantId": "952:146",
+      "tsxName": "IconShareFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "login",
+      "figmaVariant": "style=outline",
+      "variantId": "1230:119",
+      "tsxName": "IconLogin",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "login",
+      "figmaVariant": "style=filled",
+      "variantId": "1230:121",
+      "tsxName": "IconLoginFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "Logout",
+      "figmaVariant": "style=outline",
+      "variantId": "1230:126",
+      "tsxName": "IconLogout",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "Logout",
+      "figmaVariant": "style=filled",
+      "variantId": "1230:124",
+      "tsxName": "IconLogoutFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "tool",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:522",
+      "tsxName": "IconTool",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "tool",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:524",
+      "tsxName": "IconToolFilled",
+      "category": "actions",
+      "create": true
+    },
+    {
+      "figmaSet": "burger menu",
+      "figmaVariant": "style=outline",
+      "variantId": "1209:32",
+      "tsxName": "IconBurgerMenu",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "settings",
+      "figmaVariant": "style=outline",
+      "variantId": "1209:38",
+      "tsxName": "IconSettings1",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "loading",
+      "figmaVariant": "style=outline",
+      "variantId": "1209:30",
+      "tsxName": "IconLoading",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "refresh",
+      "figmaVariant": "style=outline",
+      "variantId": "1209:34",
+      "tsxName": "IconRefresh",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "paperclip",
+      "figmaVariant": "style=outline",
+      "variantId": "1209:36",
+      "tsxName": "IconPaperclip",
+      "category": "actions",
+      "create": false
+    },
+    {
+      "figmaSet": "danger",
+      "figmaVariant": "style=outline",
+      "variantId": "686:97",
+      "tsxName": "IconDanger",
+      "category": "alert",
+      "create": false
+    },
+    {
+      "figmaSet": "danger",
+      "figmaVariant": "style=filled",
+      "variantId": "686:100",
+      "tsxName": "IconDangerFilled",
+      "category": "alert",
+      "create": true
+    },
+    {
+      "figmaSet": "bell",
+      "figmaVariant": "style=outline",
+      "variantId": "952:238",
+      "tsxName": "IconBell",
+      "category": "alert",
+      "create": false
+    },
+    {
+      "figmaSet": "bell",
+      "figmaVariant": "style=filled",
+      "variantId": "952:240",
+      "tsxName": "IconBellFilled",
+      "category": "alert",
+      "create": true
+    },
+    {
+      "figmaSet": "fire",
+      "figmaVariant": "style=outline",
+      "variantId": "952:188",
+      "tsxName": "IconFire",
+      "category": "alert",
+      "create": false
+    },
+    {
+      "figmaSet": "fire",
+      "figmaVariant": "style=filled",
+      "variantId": "952:190",
+      "tsxName": "IconFireFilled",
+      "category": "alert",
+      "create": true
+    },
+    {
+      "figmaSet": "file fill",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:68",
+      "tsxName": "IconFileFill",
+      "category": "document",
+      "create": false
+    },
+    {
+      "figmaSet": "file fill",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:70",
+      "tsxName": "IconFileFillFilled",
+      "category": "document",
+      "create": true
+    },
+    {
+      "figmaSet": "file empty",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:73",
+      "tsxName": "IconFileEmpty",
+      "category": "document",
+      "create": false
+    },
+    {
+      "figmaSet": "file empty",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:75",
+      "tsxName": "IconFileEmptyFilled",
+      "category": "document",
+      "create": true
+    },
+    {
+      "figmaSet": "desk",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:78",
+      "tsxName": "IconDesk",
+      "category": "document",
+      "create": false
+    },
+    {
+      "figmaSet": "desk",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:80",
+      "tsxName": "IconDeskFilled",
+      "category": "document",
+      "create": true
+    },
+    {
+      "figmaSet": "desk_crossed",
+      "figmaVariant": "style=outline",
+      "variantId": "3295:750",
+      "tsxName": "IconDeskCrossed",
+      "category": "document",
+      "create": false
+    },
+    {
+      "figmaSet": "desk_crossed",
+      "figmaVariant": "style=filled",
+      "variantId": "3295:663",
+      "tsxName": "IconDeskCrossedFilled",
+      "category": "document",
+      "create": true
+    },
+    {
+      "figmaSet": "archive",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:83",
+      "tsxName": "IconArchive",
+      "category": "document",
+      "create": false
+    },
+    {
+      "figmaSet": "archive",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:85",
+      "tsxName": "IconArchiveFilled",
+      "category": "document",
+      "create": true
+    },
+    {
+      "figmaSet": "doc fill",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:88",
+      "tsxName": "IconDocFill",
+      "category": "document",
+      "create": false
+    },
+    {
+      "figmaSet": "doc fill",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:90",
+      "tsxName": "IconDocFillFilled",
+      "category": "document",
+      "create": true
+    },
+    {
+      "figmaSet": "passport",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:93",
+      "tsxName": "IconPassport",
+      "category": "document",
+      "create": false
+    },
+    {
+      "figmaSet": "passport",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:95",
+      "tsxName": "IconPassportFilled",
+      "category": "document",
+      "create": true
+    },
+    {
+      "figmaSet": "router",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:467",
+      "tsxName": "IconRouter",
+      "category": "device",
+      "create": false
+    },
+    {
+      "figmaSet": "router",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:469",
+      "tsxName": "IconRouterFilled",
+      "category": "device",
+      "create": true
+    },
+    {
+      "figmaSet": "tv",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:527",
+      "tsxName": "IconTv",
+      "category": "device",
+      "create": false
+    },
+    {
+      "figmaSet": "tv",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:529",
+      "tsxName": "IconTvFilled",
+      "category": "device",
+      "create": true
+    },
+    {
+      "figmaSet": "tablet",
+      "figmaVariant": "style=outline",
+      "variantId": "2609:688",
+      "tsxName": "IconTablet",
+      "category": "device",
+      "create": false
+    },
+    {
+      "figmaSet": "tablet",
+      "figmaVariant": "style=filled",
+      "variantId": "2609:687",
+      "tsxName": "IconTabletFilled",
+      "category": "device",
+      "create": true
+    },
+    {
+      "figmaSet": "keyboard",
+      "figmaVariant": "style=outline",
+      "variantId": "2610:760",
+      "tsxName": "IconKeyboard",
+      "category": "device",
+      "create": false
+    },
+    {
+      "figmaSet": "keyboard",
+      "figmaVariant": "style=filled",
+      "variantId": "2610:761",
+      "tsxName": "IconKeyboardFilled",
+      "category": "device",
+      "create": true
+    },
+    {
+      "figmaSet": "watch",
+      "figmaVariant": "style=outline",
+      "variantId": "2618:962",
+      "tsxName": "IconWatch",
+      "category": "device",
+      "create": false
+    },
+    {
+      "figmaSet": "watch",
+      "figmaVariant": "style=filled",
+      "variantId": "2618:963",
+      "tsxName": "IconWatchFilled",
+      "category": "device",
+      "create": true
+    },
+    {
+      "figmaSet": "notebook",
+      "figmaVariant": "style=outline",
+      "variantId": "2618:1010",
+      "tsxName": "IconNotebook",
+      "category": "device",
+      "create": false
+    },
+    {
+      "figmaSet": "notebook",
+      "figmaVariant": "style=filled",
+      "variantId": "2618:1009",
+      "tsxName": "IconNotebookFilled",
+      "category": "device",
+      "create": true
+    },
+    {
+      "figmaSet": "shield",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:128",
+      "tsxName": "IconShield",
+      "category": "security",
+      "create": false
+    },
+    {
+      "figmaSet": "shield",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:130",
+      "tsxName": "IconShieldFilled",
+      "category": "security",
+      "create": true
+    },
+    {
+      "figmaSet": "check shield",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:133",
+      "tsxName": "IconCheckShield",
+      "category": "security",
+      "create": false
+    },
+    {
+      "figmaSet": "check shield",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:135",
+      "tsxName": "IconCheckShieldFilled",
+      "category": "security",
+      "create": true
+    },
+    {
+      "figmaSet": "close shield",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:138",
+      "tsxName": "IconCloseShield",
+      "category": "security",
+      "create": false
+    },
+    {
+      "figmaSet": "close shield",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:140",
+      "tsxName": "IconCloseShieldFilled",
+      "category": "security",
+      "create": true
+    },
+    {
+      "figmaSet": "eye_close",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:148",
+      "tsxName": "IconEyeClose",
+      "category": "security",
+      "create": false
+    },
+    {
+      "figmaSet": "eye_close",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:150",
+      "tsxName": "IconEyeCloseFilled",
+      "category": "security",
+      "create": true
+    },
+    {
+      "figmaSet": "eye_open",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:143",
+      "tsxName": "IconEyeOpen",
+      "category": "security",
+      "create": false
+    },
+    {
+      "figmaSet": "eye_open",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:145",
+      "tsxName": "IconEyeOpenFilled",
+      "category": "security",
+      "create": true
+    },
+    {
+      "figmaSet": "Face ID",
+      "figmaVariant": "style=outline",
+      "variantId": "2610:780",
+      "tsxName": "IconFaceId",
+      "category": "security",
+      "create": false
+    },
+    {
+      "figmaSet": "Face ID",
+      "figmaVariant": "style=filled",
+      "variantId": "2610:781",
+      "tsxName": "IconFaceIdFilled",
+      "category": "security",
+      "create": true
+    },
+    {
+      "figmaSet": "Fingerprint",
+      "figmaVariant": "Fill=True",
+      "variantId": "3098:613",
+      "tsxName": "IconFingerprintFilled",
+      "category": "security",
+      "create": true
+    },
+    {
+      "figmaSet": "Fingerprint",
+      "figmaVariant": "Fill=False",
+      "variantId": "3098:615",
+      "tsxName": "IconFingerprint",
+      "category": "security",
+      "create": false
+    },
+    {
+      "figmaSet": "sale coupon",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:168",
+      "tsxName": "IconSaleCoupon",
+      "category": "shop",
+      "create": true
+    },
+    {
+      "figmaSet": "sale coupon",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:170",
+      "tsxName": "IconSaleCouponFilled",
+      "category": "shop",
+      "create": true
+    },
+    {
+      "figmaSet": "bag",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:163",
+      "tsxName": "IconBag",
+      "category": "shop",
+      "create": false
+    },
+    {
+      "figmaSet": "bag",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:165",
+      "tsxName": "IconBagFilled",
+      "category": "shop",
+      "create": true
+    },
+    {
+      "figmaSet": "home",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:153",
+      "tsxName": "IconHome",
+      "category": "shop",
+      "create": false
+    },
+    {
+      "figmaSet": "home",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:155",
+      "tsxName": "IconHomeFilled",
+      "category": "shop",
+      "create": true
+    },
+    {
+      "figmaSet": "basket",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:158",
+      "tsxName": "IconBasket",
+      "category": "shop",
+      "create": false
+    },
+    {
+      "figmaSet": "basket",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:160",
+      "tsxName": "IconBasketFilled",
+      "category": "shop",
+      "create": true
+    },
+    {
+      "figmaSet": "shopping bag",
+      "figmaVariant": "style=outline",
+      "variantId": "2618:987",
+      "tsxName": "IconShoppingBag",
+      "category": "shop",
+      "create": false
+    },
+    {
+      "figmaSet": "shopping bag",
+      "figmaVariant": "style=filled",
+      "variantId": "2618:986",
+      "tsxName": "IconShoppingBagFilled",
+      "category": "shop",
+      "create": true
+    },
+    {
+      "figmaSet": "percent",
+      "figmaVariant": "style=outline",
+      "variantId": "2719:613",
+      "tsxName": "IconPercent",
+      "category": "shop",
+      "create": false
+    },
+    {
+      "figmaSet": "x5 points icon",
+      "figmaVariant": "type=spent",
+      "variantId": "6652:698",
+      "tsxName": "IconX5Points",
+      "category": "shop",
+      "create": false
+    },
+    {
+      "figmaSet": "x5 points icon",
+      "figmaVariant": "type=received",
+      "variantId": "6652:700",
+      "tsxName": "IconX5PointsReceived",
+      "category": "shop",
+      "create": true
+    },
+    {
+      "figmaSet": "user",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:188",
+      "tsxName": "IconUser",
+      "category": "user",
+      "create": false
+    },
+    {
+      "figmaSet": "user",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:190",
+      "tsxName": "IconUserFilled",
+      "category": "user",
+      "create": true
+    },
+    {
+      "figmaSet": "user add",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:193",
+      "tsxName": "IconUserAdd",
+      "category": "user",
+      "create": false
+    },
+    {
+      "figmaSet": "user add",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:195",
+      "tsxName": "IconUserAddFilled",
+      "category": "user",
+      "create": true
+    },
+    {
+      "figmaSet": "users group",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:198",
+      "tsxName": "IconUsersGroup",
+      "category": "user",
+      "create": false
+    },
+    {
+      "figmaSet": "users group",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:200",
+      "tsxName": "IconUsersGroupFilled",
+      "category": "user",
+      "create": true
+    },
+    {
+      "figmaSet": "chevron",
+      "figmaVariant": "direction=right",
+      "variantId": "1119:284",
+      "tsxName": "IconChevronRight",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "chevron",
+      "figmaVariant": "direction=left",
+      "variantId": "1119:282",
+      "tsxName": "IconChevronLeft",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "chevron",
+      "figmaVariant": "direction=up",
+      "variantId": "1119:278",
+      "tsxName": "IconChevronUp",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "chevron",
+      "figmaVariant": "direction=down",
+      "variantId": "1119:280",
+      "tsxName": "IconChevronDown",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "arrows",
+      "figmaVariant": "direction=right",
+      "variantId": "1614:169",
+      "tsxName": "IconArrowRight",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "arrows",
+      "figmaVariant": "direction=left",
+      "variantId": "1614:167",
+      "tsxName": "IconArrowLeft",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "arrows",
+      "figmaVariant": "direction=up",
+      "variantId": "1614:163",
+      "tsxName": "IconArrowUp",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "arrows",
+      "figmaVariant": "direction=down",
+      "variantId": "1614:165",
+      "tsxName": "IconArrowDown",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "arrows_2",
+      "figmaVariant": "direction=up right",
+      "variantId": "1637:172",
+      "tsxName": "IconArrowUpRight",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "arrows_2",
+      "figmaVariant": "direction=up left",
+      "variantId": "1637:170",
+      "tsxName": "IconArrowUpLeft",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "arrows_2",
+      "figmaVariant": "direction=down left",
+      "variantId": "1637:166",
+      "tsxName": "IconArrowDownLeft",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "arrows_2",
+      "figmaVariant": "direction=down right",
+      "variantId": "1637:168",
+      "tsxName": "IconArrowDownRight",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "swap",
+      "figmaVariant": "style=outline",
+      "variantId": "1209:42",
+      "tsxName": "IconSwap",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "expand",
+      "figmaVariant": "style=outline",
+      "variantId": "1209:44",
+      "tsxName": "IconExpand",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "collapse",
+      "figmaVariant": "style=outline",
+      "variantId": "1209:40",
+      "tsxName": "IconCollapse",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "right arrow",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:428",
+      "tsxName": "IconRightArrow",
+      "category": "navigation",
+      "create": true
+    },
+    {
+      "figmaSet": "right arrow",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:430",
+      "tsxName": "IconRightArrowFilled",
+      "category": "navigation",
+      "create": true
+    },
+    {
+      "figmaSet": "left arrow",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:433",
+      "tsxName": "IconLeftArrow",
+      "category": "navigation",
+      "create": true
+    },
+    {
+      "figmaSet": "left arrow",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:435",
+      "tsxName": "IconLeftArrowFilled",
+      "category": "navigation",
+      "create": true
+    },
+    {
+      "figmaSet": "double right arrow",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:438",
+      "tsxName": "IconDoubleRightArrow",
+      "category": "navigation",
+      "create": false
+    },
+    {
+      "figmaSet": "double right arrow",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:440",
+      "tsxName": "IconDoubleRightArrowFilled",
+      "category": "navigation",
+      "create": true
+    },
+    {
+      "figmaSet": "time",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:213",
+      "tsxName": "IconTime",
+      "category": "datetime",
+      "create": false
+    },
+    {
+      "figmaSet": "time",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:215",
+      "tsxName": "IconTimeFilled",
+      "category": "datetime",
+      "create": true
+    },
+    {
+      "figmaSet": "speed",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:218",
+      "tsxName": "IconSpeed",
+      "category": "datetime",
+      "create": false
+    },
+    {
+      "figmaSet": "speed",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:220",
+      "tsxName": "IconSpeedFilled",
+      "category": "datetime",
+      "create": true
+    },
+    {
+      "figmaSet": "calendar",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:223",
+      "tsxName": "IconCalendar",
+      "category": "datetime",
+      "create": false
+    },
+    {
+      "figmaSet": "calendar",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:225",
+      "tsxName": "IconCalendarFilled",
+      "category": "datetime",
+      "create": true
+    },
+    {
+      "figmaSet": "mail new",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:268",
+      "tsxName": "IconMailNew",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "mail new",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:270",
+      "tsxName": "IconMailNewFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "dots message",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:310",
+      "tsxName": "IconDotsMessage",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "dots message",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:312",
+      "tsxName": "IconDotsMessageFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "mail open",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:263",
+      "tsxName": "IconMailOpen",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "mail open",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:265",
+      "tsxName": "IconMailOpenFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "question message",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:315",
+      "tsxName": "IconQuestionMessage",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "question message",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:317",
+      "tsxName": "IconQuestionMessageFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "dots message 2",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:243",
+      "tsxName": "IconDotsMessage1",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "dots message 2",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:245",
+      "tsxName": "IconDotsMessage1Filled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "question message 3",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:253",
+      "tsxName": "IconQuestionMessage1",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "question message 3",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:255",
+      "tsxName": "IconQuestionMessage1Filled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "chat message",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:233",
+      "tsxName": "IconChatMessage",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "chat message",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:235",
+      "tsxName": "IconChatMessageFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "chat plus message",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:238",
+      "tsxName": "IconChatPlusMessage",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "chat plus message",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:240",
+      "tsxName": "IconChatPlusMessageFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "chat add message",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:248",
+      "tsxName": "IconChatAddMessage",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "chat add message",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:250",
+      "tsxName": "IconChatAddMessageFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "send",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:258",
+      "tsxName": "IconSend",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "send",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:260",
+      "tsxName": "IconSendFilled",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "Phone",
+      "figmaVariant": "style=outline",
+      "variantId": "686:46",
+      "tsxName": "IconPhone",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "Phone",
+      "figmaVariant": "style=filled",
+      "variantId": "686:48",
+      "tsxName": "IconPhoneFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "Call silent",
+      "figmaVariant": "style=outline",
+      "variantId": "686:78",
+      "tsxName": "IconCallSilent",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "Call silent",
+      "figmaVariant": "style=filled",
+      "variantId": "686:81",
+      "tsxName": "IconCallSilentFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "Calling on_ crossed",
+      "figmaVariant": "style=outline",
+      "variantId": "3295:703",
+      "tsxName": "IconCallingOnCrossed",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "Calling on_ crossed",
+      "figmaVariant": "style=filled",
+      "variantId": "3295:666",
+      "tsxName": "IconCallingOnCrossedFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "Calling on",
+      "figmaVariant": "style=outline",
+      "variantId": "686:90",
+      "tsxName": "IconCallingOn",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "Calling on",
+      "figmaVariant": "style=filled",
+      "variantId": "686:93",
+      "tsxName": "IconCallingOnFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "Calling off",
+      "figmaVariant": "style=outline",
+      "variantId": "686:103",
+      "tsxName": "IconCallingOff",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "Calling off",
+      "figmaVariant": "style=filled",
+      "variantId": "686:106",
+      "tsxName": "IconCallingOffFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "phone-call-transfer",
+      "figmaVariant": "style=outline",
+      "variantId": "2285:171",
+      "tsxName": "IconPhoneCallTransfer",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "phone-call-transfer",
+      "figmaVariant": "style=filled",
+      "variantId": "2285:173",
+      "tsxName": "IconPhoneCallTransferFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "phone-call-out",
+      "figmaVariant": "style=outline",
+      "variantId": "2285:166",
+      "tsxName": "IconPhoneCallOut",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "phone-call-out",
+      "figmaVariant": "style=filled",
+      "variantId": "2285:168",
+      "tsxName": "IconPhoneCallOutFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "phone-call-in",
+      "figmaVariant": "style=outline",
+      "variantId": "2285:161",
+      "tsxName": "IconPhoneCallIn",
+      "category": "message",
+      "create": false
+    },
+    {
+      "figmaSet": "phone-call-in",
+      "figmaVariant": "style=filled",
+      "variantId": "2285:163",
+      "tsxName": "IconPhoneCallInFilled",
+      "category": "message",
+      "create": true
+    },
+    {
+      "figmaSet": "Camera",
+      "figmaVariant": "style=outline",
+      "variantId": "952:168",
+      "tsxName": "IconCamera",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Camera",
+      "figmaVariant": "style=filled",
+      "variantId": "952:170",
+      "tsxName": "IconCameraFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Video",
+      "figmaVariant": "style=outline",
+      "variantId": "952:183",
+      "tsxName": "IconVideo",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Video",
+      "figmaVariant": "style=filled",
+      "variantId": "952:185",
+      "tsxName": "IconVideoFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Headphones",
+      "figmaVariant": "style=outline",
+      "variantId": "952:163",
+      "tsxName": "IconHeadphones",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Headphones",
+      "figmaVariant": "style=filled",
+      "variantId": "952:165",
+      "tsxName": "IconHeadphonesFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Sound",
+      "figmaVariant": "style=outline",
+      "variantId": "952:158",
+      "tsxName": "IconSound",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Sound",
+      "figmaVariant": "style=filled",
+      "variantId": "952:160",
+      "tsxName": "IconSoundFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Image Box",
+      "figmaVariant": "style=outline",
+      "variantId": "952:173",
+      "tsxName": "IconImageBox",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Image Box",
+      "figmaVariant": "style=filled",
+      "variantId": "952:175",
+      "tsxName": "IconImageBoxFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Play",
+      "figmaVariant": "style=outline",
+      "variantId": "952:208",
+      "tsxName": "IconPlay",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Play",
+      "figmaVariant": "style=filled",
+      "variantId": "952:210",
+      "tsxName": "IconPlayFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Stop",
+      "figmaVariant": "style=outline",
+      "variantId": "952:218",
+      "tsxName": "IconStop",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Stop",
+      "figmaVariant": "style=filled",
+      "variantId": "952:220",
+      "tsxName": "IconStopFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Stop And Play",
+      "figmaVariant": "style=outline",
+      "variantId": "952:213",
+      "tsxName": "IconStopAndPlay",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Stop And Play",
+      "figmaVariant": "style=filled",
+      "variantId": "952:215",
+      "tsxName": "IconStopAndPlayFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Video File",
+      "figmaVariant": "style=outline",
+      "variantId": "952:178",
+      "tsxName": "IconVideoFile",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Video File",
+      "figmaVariant": "style=filled",
+      "variantId": "952:180",
+      "tsxName": "IconVideoFileFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Mic",
+      "figmaVariant": "style=outline",
+      "variantId": "952:149",
+      "tsxName": "IconMic",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Mic",
+      "figmaVariant": "style=filled",
+      "variantId": "952:151",
+      "tsxName": "IconMicFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Mic_crossed",
+      "figmaVariant": "style=outline",
+      "variantId": "3295:737",
+      "tsxName": "IconMicCrossed",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Mic_crossed",
+      "figmaVariant": "style=filled",
+      "variantId": "3295:665",
+      "tsxName": "IconMicCrossedFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "Mic",
+      "figmaVariant": "style=outline",
+      "variantId": "952:155",
+      "tsxName": "IconMicAlt",
+      "category": "media",
+      "create": false
+    },
+    {
+      "figmaSet": "Mic",
+      "figmaVariant": "style=filled",
+      "variantId": "952:153",
+      "tsxName": "IconMicAltFilled",
+      "category": "media",
+      "create": true
+    },
+    {
+      "figmaSet": "export",
+      "figmaVariant": "style=outline",
+      "variantId": "1230:107",
+      "tsxName": "IconExport",
+      "category": "download",
+      "create": false
+    },
+    {
+      "figmaSet": "export",
+      "figmaVariant": "style=filled",
+      "variantId": "1230:109",
+      "tsxName": "IconExportFilled",
+      "category": "download",
+      "create": true
+    },
+    {
+      "figmaSet": "import",
+      "figmaVariant": "style=outline",
+      "variantId": "1230:113",
+      "tsxName": "IconImport",
+      "category": "download",
+      "create": false
+    },
+    {
+      "figmaSet": "import",
+      "figmaVariant": "style=filled",
+      "variantId": "1230:115",
+      "tsxName": "IconImportFilled",
+      "category": "download",
+      "create": true
+    },
+    {
+      "figmaSet": "esim",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:228",
+      "tsxName": "IconEsim",
+      "category": "mobile",
+      "create": false
+    },
+    {
+      "figmaSet": "esim",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:230",
+      "tsxName": "IconEsimFilled",
+      "category": "mobile",
+      "create": true
+    },
+    {
+      "figmaSet": "sim",
+      "figmaVariant": "style=outline",
+      "variantId": "1380:102",
+      "tsxName": "IconSim",
+      "category": "mobile",
+      "create": false
+    },
+    {
+      "figmaSet": "sim",
+      "figmaVariant": "style=filled",
+      "variantId": "1380:104",
+      "tsxName": "IconSimFilled",
+      "category": "mobile",
+      "create": true
+    },
+    {
+      "figmaSet": "iPhone",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:307",
+      "tsxName": "IconIPhone",
+      "category": "mobile",
+      "create": false
+    },
+    {
+      "figmaSet": "iPhone",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:305",
+      "tsxName": "IconIPhoneFilled",
+      "category": "mobile",
+      "create": true
+    },
+    {
+      "figmaSet": "wifi",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:497",
+      "tsxName": "IconWifi",
+      "category": "mobile",
+      "create": false
+    },
+    {
+      "figmaSet": "wifi",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:499",
+      "tsxName": "IconWifiFilled",
+      "category": "mobile",
+      "create": true
+    },
+    {
+      "figmaSet": "wifi 2",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:507",
+      "tsxName": "IconWifiAlt",
+      "category": "mobile",
+      "create": false
+    },
+    {
+      "figmaSet": "wifi 2",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:509",
+      "tsxName": "IconWifiAltFilled",
+      "category": "mobile",
+      "create": true
+    },
+    {
+      "figmaSet": "Moon",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:322",
+      "tsxName": "IconMoon",
+      "category": "weather",
+      "create": false
+    },
+    {
+      "figmaSet": "Moon",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:320",
+      "tsxName": "IconMoonFilled",
+      "category": "weather",
+      "create": true
+    },
+    {
+      "figmaSet": "Rain",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:332",
+      "tsxName": "IconRain",
+      "category": "weather",
+      "create": false
+    },
+    {
+      "figmaSet": "Rain",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:330",
+      "tsxName": "IconRainFilled",
+      "category": "weather",
+      "create": true
+    },
+    {
+      "figmaSet": "Cloud",
+      "figmaVariant": "style=outline",
+      "variantId": "2576:224",
+      "tsxName": "IconCloud",
+      "category": "weather",
+      "create": false
+    },
+    {
+      "figmaSet": "Cloud",
+      "figmaVariant": "style=filled",
+      "variantId": "2576:226",
+      "tsxName": "IconCloudFilled",
+      "category": "weather",
+      "create": true
+    },
+    {
+      "figmaSet": "Sun",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:327",
+      "tsxName": "IconSun",
+      "category": "weather",
+      "create": false
+    },
+    {
+      "figmaSet": "Sun",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:325",
+      "tsxName": "IconSunFilled",
+      "category": "weather",
+      "create": true
+    },
+    {
+      "figmaSet": "Lightning",
+      "figmaVariant": "style=outline",
+      "variantId": "1508:57",
+      "tsxName": "IconLightning",
+      "category": "weather",
+      "create": false
+    },
+    {
+      "figmaSet": "Lightning",
+      "figmaVariant": "style=filled",
+      "variantId": "1508:59",
+      "tsxName": "IconLightningFilled",
+      "category": "weather",
+      "create": true
+    },
+    {
+      "figmaSet": "Lightning_crossed out",
+      "figmaVariant": "style=outline",
+      "variantId": "1508:62",
+      "tsxName": "IconLightningCrossed",
+      "category": "weather",
+      "create": false
+    },
+    {
+      "figmaSet": "Lightning_crossed out",
+      "figmaVariant": "style=filled",
+      "variantId": "1508:64",
+      "tsxName": "IconLightningCrossedFilled",
+      "category": "weather",
+      "create": true
+    },
+    {
+      "figmaSet": "honeycombs",
+      "figmaVariant": "style=outline",
+      "variantId": "1380:143",
+      "tsxName": "IconHoneycombs",
+      "category": "other",
+      "create": false
+    },
+    {
+      "figmaSet": "honeycombs",
+      "figmaVariant": "style=filled",
+      "variantId": "1380:145",
+      "tsxName": "IconHoneycombsFilled",
+      "category": "other",
+      "create": true
+    },
+    {
+      "figmaSet": "study",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:472",
+      "tsxName": "IconStudy",
+      "category": "other",
+      "create": false
+    },
+    {
+      "figmaSet": "study",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:474",
+      "tsxName": "IconStudyFilled",
+      "category": "other",
+      "create": true
+    },
+    {
+      "figmaSet": "hotel",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:482",
+      "tsxName": "IconHotel",
+      "category": "other",
+      "create": false
+    },
+    {
+      "figmaSet": "hotel",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:484",
+      "tsxName": "IconHotelFilled",
+      "category": "other",
+      "create": true
+    },
+    {
+      "figmaSet": "honey comb",
+      "figmaVariant": "style=outline",
+      "variantId": "2286:208",
+      "tsxName": "IconHoneyComb",
+      "category": "other",
+      "create": false
+    },
+    {
+      "figmaSet": "honey comb",
+      "figmaVariant": "style=filled",
+      "variantId": "2286:210",
+      "tsxName": "IconHoneyCombFilled",
+      "category": "other",
+      "create": true
+    },
+    {
+      "figmaSet": "honey comb",
+      "figmaVariant": "style=style3",
+      "variantId": "2286:212",
+      "tsxName": "IconHoneyCombStyle3",
+      "category": "other",
+      "create": true
+    },
+    {
+      "figmaSet": "orange",
+      "figmaVariant": "style=filled",
+      "variantId": "2286:215",
+      "tsxName": "IconOrange",
+      "category": "other",
+      "create": false
+    },
+    {
+      "figmaSet": "orange",
+      "figmaVariant": "style=style2",
+      "variantId": "2286:217",
+      "tsxName": "IconOrangeStyle2",
+      "category": "other",
+      "create": true
+    },
+    {
+      "figmaSet": "coupon",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:183",
+      "tsxName": "IconCoupon",
+      "category": "game",
+      "create": false
+    },
+    {
+      "figmaSet": "coupon",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:185",
+      "tsxName": "IconCouponFilled",
+      "category": "game",
+      "create": true
+    },
+    {
+      "figmaSet": "robot",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:173",
+      "tsxName": "IconRobot",
+      "category": "game",
+      "create": false
+    },
+    {
+      "figmaSet": "robot",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:175",
+      "tsxName": "IconRobotFilled",
+      "category": "game",
+      "create": true
+    },
+    {
+      "figmaSet": "robot_ crossed",
+      "figmaVariant": "style=outline",
+      "variantId": "3295:679",
+      "tsxName": "IconRobotCrossed",
+      "category": "game",
+      "create": false
+    },
+    {
+      "figmaSet": "robot_ crossed",
+      "figmaVariant": "style=filled",
+      "variantId": "3295:664",
+      "tsxName": "IconRobotCrossedFilled",
+      "category": "game",
+      "create": true
+    },
+    {
+      "figmaSet": "gamepad",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:178",
+      "tsxName": "IconGamepad",
+      "category": "game",
+      "create": false
+    },
+    {
+      "figmaSet": "gamepad",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:180",
+      "tsxName": "IconGamepadFilled",
+      "category": "game",
+      "create": true
+    },
+    {
+      "figmaSet": "gift",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:273",
+      "tsxName": "IconGift",
+      "category": "game",
+      "create": false
+    },
+    {
+      "figmaSet": "gift",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:275",
+      "tsxName": "IconGiftFilled",
+      "category": "game",
+      "create": true
+    },
+    {
+      "figmaSet": "card",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:98",
+      "tsxName": "IconCard",
+      "category": "finance",
+      "create": false
+    },
+    {
+      "figmaSet": "card",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:100",
+      "tsxName": "IconCardFilled",
+      "category": "finance",
+      "create": true
+    },
+    {
+      "figmaSet": "wallet",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:103",
+      "tsxName": "IconWallet",
+      "category": "finance",
+      "create": false
+    },
+    {
+      "figmaSet": "wallet",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:105",
+      "tsxName": "IconWalletFilled",
+      "category": "finance",
+      "create": true
+    },
+    {
+      "figmaSet": "coins",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:108",
+      "tsxName": "IconCoins",
+      "category": "finance",
+      "create": false
+    },
+    {
+      "figmaSet": "coins",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:110",
+      "tsxName": "IconCoinsFilled",
+      "category": "finance",
+      "create": true
+    },
+    {
+      "figmaSet": "calculator",
+      "figmaVariant": "style=outline",
+      "variantId": "686:40",
+      "tsxName": "IconCalculator",
+      "category": "finance",
+      "create": false
+    },
+    {
+      "figmaSet": "calculator",
+      "figmaVariant": "style=filled",
+      "variantId": "686:43",
+      "tsxName": "IconCalculatorFilled",
+      "category": "finance",
+      "create": true
+    },
+    {
+      "figmaSet": "case",
+      "figmaVariant": "style=outline",
+      "variantId": "686:51",
+      "tsxName": "IconCase",
+      "category": "finance",
+      "create": false
+    },
+    {
+      "figmaSet": "case",
+      "figmaVariant": "style=filled",
+      "variantId": "686:54",
+      "tsxName": "IconCaseFilled",
+      "category": "finance",
+      "create": true
+    },
+    {
+      "figmaSet": "bank",
+      "figmaVariant": "style=outline",
+      "variantId": "2949:607",
+      "tsxName": "IconBank",
+      "category": "finance",
+      "create": false
+    },
+    {
+      "figmaSet": "bank",
+      "figmaVariant": "style=filled",
+      "variantId": "2949:609",
+      "tsxName": "IconBankFilled",
+      "category": "finance",
+      "create": true
+    },
+    {
+      "figmaSet": "cash",
+      "figmaVariant": "style=outline",
+      "variantId": "2949:612",
+      "tsxName": "IconCash",
+      "category": "finance",
+      "create": false
+    },
+    {
+      "figmaSet": "cash",
+      "figmaVariant": "style=filled",
+      "variantId": "2949:614",
+      "tsxName": "IconCashFilled",
+      "category": "finance",
+      "create": true
+    },
+    {
+      "figmaSet": "pdf",
+      "figmaVariant": "style=outline",
+      "variantId": "8033:1164",
+      "tsxName": "IconFilePdf",
+      "category": "files",
+      "create": false
+    },
+    {
+      "figmaSet": "pdf",
+      "figmaVariant": "style=filled",
+      "variantId": "8033:1165",
+      "tsxName": "IconFilePdfFilled",
+      "category": "files",
+      "create": true
+    },
+    {
+      "figmaSet": "doc",
+      "figmaVariant": "style=outline",
+      "variantId": "8033:1168",
+      "tsxName": "IconFileDoc",
+      "category": "files",
+      "create": false
+    },
+    {
+      "figmaSet": "doc",
+      "figmaVariant": "style=filled",
+      "variantId": "8033:1167",
+      "tsxName": "IconFileDocFilled",
+      "category": "files",
+      "create": true
+    },
+    {
+      "figmaSet": "docx",
+      "figmaVariant": "style=outline",
+      "variantId": "8033:1171",
+      "tsxName": "IconFileDocx",
+      "category": "files",
+      "create": false
+    },
+    {
+      "figmaSet": "docx",
+      "figmaVariant": "style=filled",
+      "variantId": "8033:1170",
+      "tsxName": "IconFileDocxFilled",
+      "category": "files",
+      "create": true
+    },
+    {
+      "figmaSet": "img",
+      "figmaVariant": "style=outline",
+      "variantId": "8033:1174",
+      "tsxName": "IconFileImg",
+      "category": "files",
+      "create": false
+    },
+    {
+      "figmaSet": "img",
+      "figmaVariant": "style=filled",
+      "variantId": "8033:1173",
+      "tsxName": "IconFileImgFilled",
+      "category": "files",
+      "create": true
+    },
+    {
+      "figmaSet": "jpeg",
+      "figmaVariant": "style=outline",
+      "variantId": "8033:1177",
+      "tsxName": "IconFileJpeg",
+      "category": "files",
+      "create": false
+    },
+    {
+      "figmaSet": "jpeg",
+      "figmaVariant": "style=filled",
+      "variantId": "8033:1176",
+      "tsxName": "IconFileJpegFilled",
+      "category": "files",
+      "create": true
+    },
+    {
+      "figmaSet": "jpg",
+      "figmaVariant": "style=outline",
+      "variantId": "8033:1180",
+      "tsxName": "IconFileJpg",
+      "category": "files",
+      "create": false
+    },
+    {
+      "figmaSet": "jpg",
+      "figmaVariant": "style=filled",
+      "variantId": "8033:1179",
+      "tsxName": "IconFileJpgFilled",
+      "category": "files",
+      "create": true
+    },
+    {
+      "figmaSet": "png",
+      "figmaVariant": "style=outline",
+      "variantId": "8033:1183",
+      "tsxName": "IconFilePng",
+      "category": "files",
+      "create": false
+    },
+    {
+      "figmaSet": "png",
+      "figmaVariant": "style=filled",
+      "variantId": "8033:1182",
+      "tsxName": "IconFilePngFilled",
+      "category": "files",
+      "create": true
+    },
+    {
+      "figmaSet": "mark",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:113",
+      "tsxName": "IconMark",
+      "category": "map",
+      "create": false
+    },
+    {
+      "figmaSet": "mark",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:115",
+      "tsxName": "IconMarkFilled",
+      "category": "map",
+      "create": true
+    },
+    {
+      "figmaSet": "compas",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:118",
+      "tsxName": "IconCompas",
+      "category": "map",
+      "create": false
+    },
+    {
+      "figmaSet": "compas",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:120",
+      "tsxName": "IconCompasFilled",
+      "category": "map",
+      "create": true
+    },
+    {
+      "figmaSet": "globe",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:123",
+      "tsxName": "IconGlobe",
+      "category": "map",
+      "create": false
+    },
+    {
+      "figmaSet": "globe",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:125",
+      "tsxName": "IconGlobeFilled",
+      "category": "map",
+      "create": true
+    },
+    {
+      "figmaSet": "plane",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:462",
+      "tsxName": "IconPlane",
+      "category": "transport",
+      "create": false
+    },
+    {
+      "figmaSet": "plane",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:464",
+      "tsxName": "IconPlaneFilled",
+      "category": "transport",
+      "create": true
+    },
+    {
+      "figmaSet": "car",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:512",
+      "tsxName": "IconCar",
+      "category": "transport",
+      "create": false
+    },
+    {
+      "figmaSet": "car",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:514",
+      "tsxName": "IconCarFilled",
+      "category": "transport",
+      "create": true
+    },
+    {
+      "figmaSet": "train",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:517",
+      "tsxName": "IconTrain",
+      "category": "transport",
+      "create": false
+    },
+    {
+      "figmaSet": "train",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:519",
+      "tsxName": "IconTrainFilled",
+      "category": "transport",
+      "create": true
+    },
+    {
+      "figmaSet": "bus",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:532",
+      "tsxName": "IconBus",
+      "category": "transport",
+      "create": false
+    },
+    {
+      "figmaSet": "bus",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:534",
+      "tsxName": "IconBusFilled",
+      "category": "transport",
+      "create": true
+    },
+    {
+      "figmaSet": "pump",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:492",
+      "tsxName": "IconPump",
+      "category": "transport",
+      "create": false
+    },
+    {
+      "figmaSet": "pump",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:494",
+      "tsxName": "IconPumpFilled",
+      "category": "transport",
+      "create": true
+    },
+    {
+      "figmaSet": "chart",
+      "figmaVariant": "style=outline",
+      "variantId": "952:193",
+      "tsxName": "IconChart",
+      "category": "chart",
+      "create": false
+    },
+    {
+      "figmaSet": "chart",
+      "figmaVariant": "style=filled",
+      "variantId": "952:195",
+      "tsxName": "IconChartFilled",
+      "category": "chart",
+      "create": true
+    },
+    {
+      "figmaSet": "chart alt",
+      "figmaVariant": "style=outline",
+      "variantId": "952:198",
+      "tsxName": "IconChartAlt",
+      "category": "chart",
+      "create": false
+    },
+    {
+      "figmaSet": "chart alt",
+      "figmaVariant": "style=filled",
+      "variantId": "952:200",
+      "tsxName": "IconChartAltFilled",
+      "category": "chart",
+      "create": true
+    },
+    {
+      "figmaSet": "pie chart",
+      "figmaVariant": "style=outline",
+      "variantId": "952:203",
+      "tsxName": "IconPieChart",
+      "category": "chart",
+      "create": false
+    },
+    {
+      "figmaSet": "pie chart",
+      "figmaVariant": "style=filled",
+      "variantId": "952:205",
+      "tsxName": "IconPieChartFilled",
+      "category": "chart",
+      "create": true
+    },
+    {
+      "figmaSet": "check round",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:58",
+      "tsxName": "IconCheckRound",
+      "category": "check",
+      "create": false
+    },
+    {
+      "figmaSet": "check round",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:60",
+      "tsxName": "IconCheckRoundFilled",
+      "category": "check",
+      "create": true
+    },
+    {
+      "figmaSet": "check mark",
+      "figmaVariant": "style=check",
+      "variantId": "1119:63",
+      "tsxName": "IconCheckMark",
+      "category": "check",
+      "create": false
+    },
+    {
+      "figmaSet": "check mark",
+      "figmaVariant": "style=double check",
+      "variantId": "1119:65",
+      "tsxName": "IconDoubleCheckMark",
+      "category": "check",
+      "create": false
+    },
+    {
+      "figmaSet": "heart",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:28",
+      "tsxName": "IconHeart",
+      "category": "bookmark",
+      "create": false
+    },
+    {
+      "figmaSet": "heart",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:30",
+      "tsxName": "IconHeartFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "lable",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:53",
+      "tsxName": "IconLabel",
+      "category": "bookmark",
+      "create": false
+    },
+    {
+      "figmaSet": "lable",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:55",
+      "tsxName": "IconLabelFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "broken heart",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:33",
+      "tsxName": "IconBrokenHeart",
+      "category": "bookmark",
+      "create": false
+    },
+    {
+      "figmaSet": "broken heart",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:35",
+      "tsxName": "IconBrokenHeartFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "flag",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:38",
+      "tsxName": "IconFlag",
+      "category": "bookmark",
+      "create": false
+    },
+    {
+      "figmaSet": "flag",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:40",
+      "tsxName": "IconFlagFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "pin",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:43",
+      "tsxName": "IconPin",
+      "category": "bookmark",
+      "create": false
+    },
+    {
+      "figmaSet": "pin",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:45",
+      "tsxName": "IconPinFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "bookmark",
+      "figmaVariant": "style=outline",
+      "variantId": "1119:48",
+      "tsxName": "IconBookmark",
+      "category": "bookmark",
+      "create": false
+    },
+    {
+      "figmaSet": "bookmark",
+      "figmaVariant": "style=filled",
+      "variantId": "1119:50",
+      "tsxName": "IconBookmarkFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "star",
+      "figmaVariant": "style=outline",
+      "variantId": "686:66",
+      "tsxName": "IconStar",
+      "category": "bookmark",
+      "create": false
+    },
+    {
+      "figmaSet": "star",
+      "figmaVariant": "style=half filled",
+      "variantId": "686:68",
+      "tsxName": "IconStarHalfFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "star",
+      "figmaVariant": "style=filled",
+      "variantId": "686:70",
+      "tsxName": "IconStarFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "book",
+      "figmaVariant": "style=outline",
+      "variantId": "2284:487",
+      "tsxName": "IconBook",
+      "category": "bookmark",
+      "create": false
+    },
+    {
+      "figmaSet": "book",
+      "figmaVariant": "style=filled",
+      "variantId": "2284:489",
+      "tsxName": "IconBookFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "thumbs up",
+      "figmaVariant": "style=outline",
+      "variantId": "3561:7196",
+      "tsxName": "IconThumbsUp",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "thumbs up",
+      "figmaVariant": "style=filled",
+      "variantId": "3561:7198",
+      "tsxName": "IconThumbsUpFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "thumbs down",
+      "figmaVariant": "style=outline",
+      "variantId": "3561:7201",
+      "tsxName": "IconThumbsDown",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "thumbs down",
+      "figmaVariant": "style=filled",
+      "variantId": "3561:7203",
+      "tsxName": "IconThumbsDownFilled",
+      "category": "bookmark",
+      "create": true
+    },
+    {
+      "figmaSet": "infinite",
+      "figmaVariant": "default",
+      "variantId": "2284:502",
+      "tsxName": "IconInfinite",
+      "category": "mobile",
+      "create": false
+    }
+  ]
+}

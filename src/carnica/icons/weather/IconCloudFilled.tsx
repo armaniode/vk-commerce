@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconCloudFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M17.9 10C17.7 10 17.4 9.8 17.3 9.5C16.4 7.5 14.3 6 11.9 6C9.5 6 7.4 7.4 6.5 9.5C6.3 9.8 6.1 10 5.9 10C3.7 10 2 11.7 2 13.9C2 16.1 3.7 17.8 5.9 17.8H17.9C20 17.8 21.8 16.1 21.8 13.9C21.8 11.7 20 10 17.9 10Z" fill="currentColor"/>
+    </svg>
+  );
+}

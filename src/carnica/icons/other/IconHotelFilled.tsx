@@ -1,0 +1,10 @@
+import type { SVGProps } from 'react';
+
+export function IconHotelFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M19.21 6.85H12.1C11.56 6.85 11.12 7.29 11.12 7.83V13.53H3.75V5.88C3.75 5.39 3.36 5 2.88 5C2.4 5 2 5.39 2 5.88V18.19C2 18.67 2.39 19.07 2.88 19.07C3.37 19.07 3.76 18.68 3.76 18.19V15.29H20.25V18.19C20.25 18.67 20.64 19.07 21.13 19.07C21.62 19.07 22.01 18.68 22.01 18.19V9.63C21.99 8.1 20.74 6.85 19.21 6.85Z" fill="currentColor"/>
+      <path d="M7.49 12.62C9.11 12.62 10.42 11.31 10.42 9.69C10.42 8.07 9.11 6.76 7.49 6.76C5.87 6.76 4.56 8.08 4.56 9.69C4.56 11.31 5.88 12.62 7.49 12.62Z" fill="currentColor"/>
+    </svg>
+  );
+}

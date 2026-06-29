@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconIPhoneFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M14.9 2H8.9C7.3 2 6 3.3 6 4.9V18.9C6 20.5 7.3 21.8 8.9 21.8H14.9C16.5 21.8 17.8 20.5 17.8 18.9V4.9C17.8 3.3 16.5 2 14.9 2ZM13.4 4.8H10.4C9.9 4.8 9.5 4.4 9.5 3.9C9.5 3.4 9.9 3 10.4 3H13.4C13.9 3 14.3 3.4 14.3 3.9C14.3 4.4 13.9 4.8 13.4 4.8Z" fill="currentColor"/>
+    </svg>
+  );
+}

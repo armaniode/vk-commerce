@@ -1,0 +1,10 @@
+import type { SVGProps } from 'react';
+
+export function IconFileEmptyFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M15.01 7.07C15.01 7.47 15.29 7.8 15.64 7.8H18.29C18.27 7.76 18.25 7.73 18.22 7.69L15.27 3.91C15.19 3.81 15.1 3.73 15.02 3.65V7.07H15.01Z" fill="currentColor"/>
+      <path d="M15.64 9.55C14.33 9.55 13.26 8.44 13.26 7.07V3H8.88C6.74 3 5 4.83 5 7.08V16.68C5 18.93 6.74 20.76 8.88 20.76H14.88C17.02 20.76 18.76 18.93 18.76 16.68V9.55H15.64Z" fill="currentColor"/>
+    </svg>
+  );
+}

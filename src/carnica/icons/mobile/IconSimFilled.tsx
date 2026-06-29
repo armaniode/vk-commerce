@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconSimFilled(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M18.4 5.6L15.6 3.2C14.8 2.4 13.8 2 12.7 2H8.4C5.6 2 4 3.6 4 6.5V17.7C4 20.2 5.7 21.9 8.1 21.9H15.6C18.1 21.9 19.9 20.3 19.9 17.9V9C20 7.7 19.4 6.4 18.4 5.6ZM16 15.9C16 17 15.1 18 13.9 18H10C8.9 17.9 8 17 8 15.9V15C8 13.9 8.9 13 10 13H13.9C15 13 16 13.9 16 15.1V15.9Z" fill="currentColor"/>
+    </svg>
+  );
+}

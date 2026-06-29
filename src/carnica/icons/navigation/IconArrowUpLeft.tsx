@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react';
+
+export function IconArrowUpLeft(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path fillRule="evenodd" clipRule="evenodd" d="M6 6.9C6 6.4 6.4 6 6.9 6H11.9C12.4 6 12.8 6.4 12.8 6.9C12.8 7.4 12.4 7.8 11.9 7.8H9L18 16.8C18.3 17.1 18.3 17.7 18 18C17.7 18.3 17.1 18.3 16.8 18L7.8 9V11.9C7.8 12.4 7.4 12.8 6.9 12.8C6.4 12.8 6 12.4 6 11.9V6.9Z" fill="currentColor"/>
+    </svg>
+  );
+}

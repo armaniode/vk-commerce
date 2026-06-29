@@ -1,0 +1,13 @@
+export { IconBag } from './IconBag';
+export { IconBagFilled } from './IconBagFilled';
+export { IconBasket } from './IconBasket';
+export { IconBasketFilled } from './IconBasketFilled';
+export { IconHome } from './IconHome';
+export { IconHomeFilled } from './IconHomeFilled';
+export { IconPercent } from './IconPercent';
+export { IconSaleCoupon } from './IconSaleCoupon';
+export { IconSaleCouponFilled } from './IconSaleCouponFilled';
+export { IconShoppingBag } from './IconShoppingBag';
+export { IconShoppingBagFilled } from './IconShoppingBagFilled';
+export { IconX5Points } from './IconX5Points';
+export { IconX5PointsReceived } from './IconX5PointsReceived';

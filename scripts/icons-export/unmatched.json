@@ -1,0 +1,112 @@
+{
+  "_stats": {
+    "totalFigmaSets": 181,
+    "totalTsxFiles": 180,
+    "mappedPairs": 350,
+    "mappedExisting": 180,
+    "mappedNewFiles": 170,
+    "unmatchedFigma": 14,
+    "unmatchedTsx": 0
+  },
+  "unmatchedFigma": [
+    {
+      "figmaName": "pdf",
+      "variantName": "style=outline",
+      "variantId": "8036:1189",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "pdf",
+      "variantName": "style=filled",
+      "variantId": "8036:1188",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "doc",
+      "variantName": "style=outline",
+      "variantId": "8036:1192",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "doc",
+      "variantName": "style=filled",
+      "variantId": "8036:1191",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "docx",
+      "variantName": "style=outline",
+      "variantId": "8036:1195",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "docx",
+      "variantName": "style=filled",
+      "variantId": "8036:1194",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "img",
+      "variantName": "style=outline",
+      "variantId": "8036:1198",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "img",
+      "variantName": "style=filled",
+      "variantId": "8036:1197",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "jpeg",
+      "variantName": "style=outline",
+      "variantId": "8036:1201",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "jpeg",
+      "variantName": "style=filled",
+      "variantId": "8036:1200",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "jpg",
+      "variantName": "style=outline",
+      "variantId": "8036:1204",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "jpg",
+      "variantName": "style=filled",
+      "variantId": "8036:1203",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "png",
+      "variantName": "style=outline",
+      "variantId": "8036:1207",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    },
+    {
+      "figmaName": "png",
+      "variantName": "style=filled",
+      "variantId": "8036:1206",
+      "expectedTsx": null,
+      "reason": "skipped (32x32 duplicate, no TSX pair in repo)"
+    }
+  ],
+  "unmatchedTsx": []
+}

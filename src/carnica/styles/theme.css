@@ -1,0 +1,159 @@
+/* ─────────────────────────────────────────────────────────────
+   Carnica theme tokens — каноничные CSS-переменные.
+   Источник правды: src/carnica/tokens/colors.ts.
+
+   Импортируй этот файл из любого проекта-потребителя:
+     @import '@carnica/styles/theme.css';
+   или относительным путём — и подключи tailwind-preset из
+   src/carnica/styles/tailwind-preset.js.
+
+   Чтобы переключить тему — ставь на <html> атрибут
+   data-theme="dark" или data-theme="light".
+
+   Значения — r g b триплеты для поддержки alpha-модификатора Tailwind
+   (например bg-bee-bg-primary/80). Где есть прозрачность встроенная
+   в hex (#RRGGBBAA) — оставляем строкой целиком.
+   ─────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── content (текст/иконки) ─────────────────────────────── */
+  --bee-content-primary:           40 48 63;     /* #28303F */
+  --bee-content-secondary:         119 132 157;  /* #77849D */
+  --bee-content-tertiary:          142 153 175;  /* #8E99AF */
+  --bee-content-disabled:          165 174 192;  /* #A5AEC0 */
+
+  --bee-content-invert:            255 255 255;
+  --bee-content-secondary-invert:  165 174 192;
+  --bee-content-tertiary-invert:   119 132 157;
+  --bee-content-disabled-invert:    88 101 126;
+
+  --bee-content-primary-fake-invert:   255 255 255;
+  --bee-content-secondary-fake-invert: 165 174 192;
+  --bee-content-tertiary-fake-invert:  119 132 157;
+  --bee-content-disabled-fake-invert:   88 101 126;
+
+  /* ── background (фоны страницы / секций) ────────────────── */
+  --bee-bg-primary:       240 243 245;
+  --bee-bg-secondary:     255 255 255;
+  --bee-bg-tertiary:      240 243 245;
+  --bee-bg-additional01:  255 255 255;
+  --bee-bg-additional02:  #77849D1F;
+  --bee-bg-overlay:       #191C22B2;
+
+  --bee-bg-primary-fake-invert:    24 28 35;
+  --bee-bg-secondary-fake-invert:  32 38 50;
+  --bee-bg-tertiary-fake-invert:   40 48 63;
+  --bee-bg-additional-fake-invert: #77849D1F;
+
+  /* ── elements (поверхности: кнопки, карточки, инпуты) ───── */
+  --bee-el-primary:       255 255 255;
+  --bee-el-secondary:     240 243 245;
+  --bee-el-tertiary:      226 230 237;
+  --bee-el-disabled:      226 230 237;
+  --bee-el-additional01:  255 255 255;
+  --bee-el-additional02:  #77849D1F;
+  --bee-el-active:        32 38 50;
+
+  --bee-el-primary-fake-invert:      32 38 50;
+  --bee-el-secondary-fake-invert:    40 48 63;
+  --bee-el-tertiary-fake-invert:     40 48 63;
+  --bee-el-disabled-fake-invert:     50 60 78;
+  --bee-el-additional01-fake-invert: 32 38 50;
+  --bee-el-additional02-fake-invert: #77849D1F;
+  --bee-el-active-fake-invert:       255 255 255;
+
+  /* ── borders ────────────────────────────────────────────── */
+  --bee-border-primary:    195 201 213;
+  --bee-border-secondary:  226 230 237;
+
+  --bee-border-primary-invert:    88 101 126;
+  --bee-border-secondary-invert:  60 71 93;
+
+  --bee-border-primary-fake-invert:    88 101 126;
+  --bee-border-secondary-fake-invert:  60 71 93;
+
+  /* ── overlay (прозрачные слои для модалок) ──────────────── */
+  --bee-overlay-xl:  #181C23E5;
+  --bee-overlay-l:   #28303F33;
+  --bee-overlay-m:   #F0F3F5CC;
+  --bee-overlay-s:   #F0F3F54D;
+  --bee-overlay-xs:  #FFFFFF1A;
+
+  /* ── glass (полупрозрачные стеклянные подложки) ─────────── */
+  --bee-glass-primary:    #F0F3F580;
+  --bee-glass-secondary:  #FFFFFF80;
+  --bee-glass-disabled:   #E2E6ED99;
+  --bee-glass-invert:     #202632CC;
+  --bee-glass-brand:      #FFC800CC;
+  --bee-glass-error:      #F84A00CC;
+
+  /* ── constants (не меняются по теме) ────────────────────── */
+  --bee-constant-dark:   40 48 63;
+  --bee-constant-light:  255 255 255;
+
+  --bee-brand-primary:    255 200 0;
+  --bee-brand-secondary:  255 213 70;
+  --bee-brand-tertiary:   244 184 7;
+
+  --bee-error-primary:    248 74 0;
+  --bee-error-secondary:  255 101 36;
+  --bee-error-tertiary:   184 55 0;
+
+  --bee-success-primary:    0 165 94;
+  --bee-success-secondary:  0 192 109;
+  --bee-success-tertiary:   0 143 81;
+
+  --bee-link-primary:    16 134 249;
+  --bee-link-secondary:  46 148 250;
+  --bee-link-tertiary:   6 112 219;
+}
+
+:root[data-theme='dark'] {
+  /* ── content ────────────────────────────────────────────── */
+  --bee-content-primary:    255 255 255;
+  --bee-content-secondary:  165 174 192;
+  --bee-content-tertiary:   119 132 157;
+  --bee-content-disabled:    88 101 126;
+
+  --bee-content-invert:            40 48 63;
+  --bee-content-secondary-invert:  119 132 157;
+  --bee-content-tertiary-invert:   142 153 175;
+  --bee-content-disabled-invert:   165 174 192;
+
+  /* fake-invert НЕ flip'ается — это константа по дизайну */
+
+  /* ── background ─────────────────────────────────────────── */
+  --bee-bg-primary:       24 28 35;
+  --bee-bg-secondary:     32 38 50;
+  --bee-bg-tertiary:      40 48 63;
+  --bee-bg-additional01:  #77849D1F;
+  --bee-bg-additional02:  #77849D1F;
+  --bee-bg-overlay:       #191C22CC;
+
+  /* ── elements ───────────────────────────────────────────── */
+  --bee-el-primary:       32 38 50;
+  --bee-el-secondary:     40 48 63;
+  --bee-el-tertiary:      40 48 63;
+  --bee-el-disabled:      50 60 78;
+  --bee-el-additional01:  #77849D1F;
+  --bee-el-additional02:  #77849D1F;
+  --bee-el-active:        255 255 255;
+
+  /* ── borders ────────────────────────────────────────────── */
+  --bee-border-primary:    88 101 126;
+  --bee-border-secondary:  60 71 93;
+
+  --bee-border-primary-invert:    195 201 213;
+  --bee-border-secondary-invert:  226 230 237;
+
+  /* ── overlay ────────────────────────────────────────────── */
+  --bee-overlay-xl:  #000000CC;
+  --bee-overlay-m:   #181C23CC;
+  --bee-overlay-s:   #181C234D;
+
+  /* ── glass ──────────────────────────────────────────────── */
+  --bee-glass-primary:    #28303FB3;
+  --bee-glass-secondary:  #77849D1F;
+  --bee-glass-disabled:   #323C4ECC;
+  --bee-glass-invert:     #FFFFFFB3;
+}

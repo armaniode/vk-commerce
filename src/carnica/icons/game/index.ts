@@ -1,0 +1,10 @@
+export { IconCoupon } from './IconCoupon';
+export { IconCouponFilled } from './IconCouponFilled';
+export { IconGamepad } from './IconGamepad';
+export { IconGamepadFilled } from './IconGamepadFilled';
+export { IconGift } from './IconGift';
+export { IconGiftFilled } from './IconGiftFilled';
+export { IconRobot } from './IconRobot';
+export { IconRobotCrossed } from './IconRobotCrossed';
+export { IconRobotCrossedFilled } from './IconRobotCrossedFilled';
+export { IconRobotFilled } from './IconRobotFilled';

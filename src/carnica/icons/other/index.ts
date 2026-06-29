@@ -1,0 +1,11 @@
+export { IconHoneyComb } from './IconHoneyComb';
+export { IconHoneyCombFilled } from './IconHoneyCombFilled';
+export { IconHoneyCombStyle3 } from './IconHoneyCombStyle3';
+export { IconHoneycombs } from './IconHoneycombs';
+export { IconHoneycombsFilled } from './IconHoneycombsFilled';
+export { IconHotel } from './IconHotel';
+export { IconHotelFilled } from './IconHotelFilled';
+export { IconOrange } from './IconOrange';
+export { IconOrangeStyle2 } from './IconOrangeStyle2';
+export { IconStudy } from './IconStudy';
+export { IconStudyFilled } from './IconStudyFilled';
