@@ -1,5 +1,7 @@
 # Carnica Rules Template
 
+> **Статус репозитория.** Репозиторий импортирован из Carnica Rules Template и сейчас адаптируется под VK Social Commerce / Соц-коммерцию. Существующая документация Carnica пока сохраняется без удаления и массового переименования.
+
 Темплейт для проектов с дизайн-системой Carnica (билайн). 16 skills (10 reference + 6 capability) + 2 runtime-адаптера (Claude Code / Codex) + живой showcase-сайт (Vite + React + Tailwind).
 
 ## Что это
