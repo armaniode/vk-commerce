@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Claude Code adapter for Carnica Rules Template.
+Переходный адаптер Claude Code для проекта VK Social Commerce / Соц-коммерция.
 
 ## Общение и workflow
 
@@ -8,18 +8,58 @@ Claude Code adapter for Carnica Rules Template.
 - Тексты для PR, changelog, release notes, task review и других описаний проделанной работы пиши на русском языке; технические идентификаторы, команды и пути оставляй как есть.
 - Для нетривиальных задач сначала веди план в `tasks/todo.md` (пример — `.examples/tasks-todo-example.md`).
 - Если пользователь исправил ошибку, добавь правило в `tasks/lessons.md`.
-- Не объявляй задачу готовой без проверки и свежих команд/свидетельств.
+- Не объявляй работу готовой без проверки и свежих команд или свидетельств.
 - Если что-то пошло не по плану, остановись, обнови план и продолжай.
 
-**High-level workflow Carnica-задач:** brief → `carnica-figma-design` (генерация по принципам) → `carnica-critique` (in-process ревью между секциями) → `carnica-final-qa` (финальный QA перед сдачей). Детали — в SKILL.md bodies каждого capability.
+## Контекст проекта
 
-## Skills
+- Репозиторий адаптируется под VK Social Commerce / Соц-коммерцию.
+- Цель продукта описана в `docs/product-scope.md`.
+- Порядок миграции описан в `docs/migration-map.md`.
+- Текущее состояние описано в `docs/migration-status.md`.
+- Технический префикс будущих skills: `vk-commerce-`.
 
-> Конвенция: см. `.agents/README.md`. Канонический путь — `.agents/skills/`, в `.claude/skills/` — symlink.
+## Переходный режим
 
-- `carnica-figma-design` — «собери экран», «создай Carnica», «нарисуй компонент» — генерация UI в Figma по принципам. НЕ для финального QA → `carnica-final-qa`.
-- `carnica-ui-kit-app` — «APP-компонент», «mobile Carnica», «cell 3.1» — сборка iOS-компонентов через Figma Plugin API. НЕ для WEB → `carnica-ui-kit-web`.
-- `carnica-ui-kit-web` — «WEB-компонент», «beeline.ru», «header main», «hover state» — сборка WEB-компонентов. НЕ для APP/mobile → `carnica-ui-kit-app`.
-- `carnica-color-token-selection` — «какой токен», «какой фон», «fake-invert» — workflow выбора цветового токена. НЕ для полного справочника → `carnica-design-system`.
-- `carnica-critique` — «оцени дизайн», «design review», «насколько хорошо» — in-process качественное ревью. НЕ для финального QA → `carnica-final-qa`.
-- `carnica-final-qa` — «можно ли сдавать», «final review», «оценить готовый» — ship-readiness QA. НЕ для in-process → `carnica-critique`.
+- Существующие `carnica-*` skills являются legacy-источником архитектуры.
+- Их можно изучать для понимания структуры skills, progressive disclosure, critique и QA workflows.
+- Запрещено использовать компоненты, токены, типографику, тексты, Figma keys, брендовые правила и визуальные решения Carnica/Beeline как решения для VK.
+- Переименование Carnica-сущности не считается переносом в VK.
+- Если для задачи нет подтверждённых данных VK, агент должен явно сообщить, чего не хватает.
+- Нельзя самостоятельно подменять отсутствующие VK-данные значениями Carnica.
+- Нельзя утверждать, что интерфейс соответствует дизайн-системе VK, пока соответствующий VK skill и source of truth не добавлены.
+
+## Целевой workflow
+
+`brief → prototype → critique → final QA`
+
+Это целевой workflow проекта. Соответствующие `vk-commerce-*` capability skills ещё не созданы и не должны восприниматься как доступные или работающие.
+
+## Правила для дизайн-задач VK Social Commerce
+
+1. Прочитать `docs/product-scope.md`, `docs/migration-map.md` и `docs/migration-status.md`.
+2. Определить, какие подтверждённые VK-источники доступны.
+3. При нехватке токенов, компонентов или паттернов запросить данные либо явно обозначить допущения.
+4. Не обращаться к `carnica-*` как к продуктовому source of truth.
+5. Проверить результат и перечислить использованные источники и допущения.
+
+## Legacy skills
+
+Конвенция описана в `.agents/README.md`. Канонический путь — `.agents/skills/`. Claude использует symlink `.claude/skills` → `../.agents/skills`.
+
+Текущие Carnica capability skills:
+
+- `carnica-figma-design`;
+- `carnica-ui-kit-app`;
+- `carnica-ui-kit-web`;
+- `carnica-color-token-selection`;
+- `carnica-critique`;
+- `carnica-final-qa`.
+
+До миграции они доступны только:
+
+- для анализа архитектуры;
+- для аудита исходного шаблона;
+- для подготовки эквивалентных `vk-commerce-*` skills.
+
+Не маршрутизируй запросы на создание VK-интерфейса напрямую в `carnica-figma-design`, `carnica-ui-kit-app` или другие `carnica-*` skills.
