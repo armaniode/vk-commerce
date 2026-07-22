@@ -1,119 +1,143 @@
-# Carnica Rules Template
+# VK Social Commerce Prototyping Environment
 
-> **Статус репозитория.** Репозиторий импортирован из Carnica Rules Template и сейчас адаптируется под VK Social Commerce / Соц-коммерцию. Существующая документация Carnica пока сохраняется без удаления и массового переименования.
+Внутренняя среда для дизайнеров направления Соц-коммерции VK, которая должна позволить быстро собирать простые мобильные экраны и кликабельные React-прототипы по текстовому запросу.
 
-Темплейт для проектов с дизайн-системой Carnica (билайн). 16 skills (10 reference + 6 capability) + 2 runtime-адаптера (Claude Code / Codex) + живой showcase-сайт (Vite + React + Tailwind).
+Проект находится в процессе миграции и пока не является готовым VK UI-kit или реализацией дизайн-системы VK.
 
-## Что это
+## Статус проекта
 
-База знаний дизайн-системы Carnica, упакованная как progressive-disclosure skills, плюс работающий сайт-документация со всеми компонентами, foundations и редполитикой.
+> [!IMPORTANT]
+> - Репозиторий импортирован из Carnica Rules Template.
+> - Архитектура агентов и skills сохраняется как основа для постепенной миграции.
+> - Материалы Carnica и Beeline являются legacy и не должны использоваться как дизайн-решения или source of truth для VK.
+> - Подтверждённые VK-токены, компоненты и продуктовые паттерны ещё предстоит добавить.
+> - Переходный статус не означает, что VK UI-kit или `vk-commerce-*` skills уже готовы.
 
-- **Skills** — для LLM-агента (Claude Code, Codex): подтягивают только нужное содержимое по trigger-фразам в `description`, idle-сессия ≤ 30k токенов
-  - Reference skills (10) — KNOW: типографика, компоненты, цвет, паттерны, motion, copy-tone, gotchas, UX-принципы, design-references
-  - Capability skills (6) — DO: генерация UI в Figma, ревью, выбор токена, финальный QA
-- **Showcase-сайт** (`src/screens/showcase/`) — UI-документация, открывается в браузере. Список всех Carnica-компонентов, шкала типографики, палитра цветов, отступы, скругления, ~350 иконок, редполитика, каталог компонентов с историей изменений
+Основные документы проекта:
 
-Входы агента: `CLAUDE.md` (Claude Code), `AGENTS.md` (Codex). Конвенция skills — `.agents/README.md`.
+- [Product scope](docs/product-scope.md) — цель и границы продукта;
+- [Migration map](docs/migration-map.md) — план переноса архитектуры и замены legacy;
+- [Migration status](docs/migration-status.md) — актуальное состояние миграции.
 
-## Запуск showcase локально
+## Что мы строим
 
-```bash
-npm install
-npm run dev
-```
+Целевой результат проекта:
 
-Откроется на http://localhost:5173. Production-build: `npm run build` → `dist/`.
+- генерация простых мобильных экранов;
+- создание нескольких связанных экранов и состояний;
+- кликабельные React-прототипы, работающие в браузере;
+- использование подтверждённых компонентов и токенов VK;
+- возможность изменять результат следующими текстовыми запросами;
+- critique и final QA по правилам Соц-коммерции.
 
-### Структура
+Это целевое состояние, а не описание уже реализованной функциональности.
 
-- `src/screens/showcase/` — главный shell + страницы (компоненты / основы / каталог / редполитика)
-- `src/carnica/` — сам кит: components, icons (~350), tokens (colors, typography, spacing)
-- `src/screens/balance/` — старый mobile-экран (доступен по `#balance`)
-- `public/fonts/` — BeelineSans Regular/Medium
-- `public/logo beeline.svg` — лого
-- `middleware.ts` — Vercel Edge Basic Auth для защищённого деплоя
-- `SUPABASE_SETUP.md` — инструкция по подключению Supabase для каталога компонентов
+## Для кого
 
-## Architecture
+Основные пользователи:
 
-16 skills организованы в DAG (см. `.agents/README.md` § 17.3): корни — 6 capability, листья — 10 reference. Ребро capability → reference означает «капабилити может подтянуть этот ref в workflow» (lazy auto-load, не обязательность). Reference → reference запрещено: один OWNER на тему.
+- продуктовые дизайнеры Соц-коммерции VK;
+- в дальнейшем — другие участники продуктовой команды, если среда окажется для них полезной.
 
-### Reference skills (10) — KNOW
+## Что доступно сейчас
 
-| Skill | Хранит |
-|---|---|
-| `carnica-typography` | принципы текста + WCAG + единицы |
-| `carnica-components` | decision trees + каталог + header |
-| `carnica-visual-patterns` | 20 паттернов (самый тяжёлый) |
-| `carnica-anti-slop` | P0/P1/P2 trigger-list |
-| `carnica-motion` | длительности + easing + reduced-motion |
-| `carnica-copy-tone` | voice + микрокопия |
-| `carnica-ux-principles` | 16 принципов |
-| `carnica-design-system` | OWNER color tokens + spacing |
-| `carnica-gotchas` | reverse-lookup pitfalls |
-| `carnica-design-references` | catalog 20 макетов |
+- [Product scope](docs/product-scope.md);
+- [карта миграции](docs/migration-map.md);
+- переходные адаптеры Codex и Claude;
+- архитектура progressive-disclosure skills;
+- legacy showcase;
+- legacy-база знаний Carnica для анализа архитектуры;
+- Git- и PR-workflow для поэтапных изменений.
 
-### Capability skills (6) — DO
+## Что пока не готово
 
-| Skill | Делает | @references |
-|---|---|---|
-| `carnica-figma-design` | генерация UI в Figma по принципам | 11 refs |
-| `carnica-critique` | 6-мерное in-process ревью 0–10 | 5 refs |
-| `carnica-ui-kit-app` | iOS / mobile компоненты | 2 refs + 9 topic-refs |
-| `carnica-ui-kit-web` | beeline.ru / desktop компоненты | 2 refs + 9 topic-refs |
-| `carnica-color-token-selection` | workflow выбора токена | 2 refs (OWNER → design-system) |
-| `carnica-final-qa` | финальный ship-readiness QA | 3 refs |
+- подтверждённые VK-токены;
+- типографика VK;
+- иконки VK;
+- кодовые VK-компоненты;
+- `vk-commerce-*` skills;
+- генерация React-прототипов по правилам VK;
+- продуктовые паттерны Соц-коммерции;
+- новый showcase;
+- новый Vercel deployment.
 
-Adapter routing — `CLAUDE.md` (Claude Code) / `AGENTS.md` (Codex). Skills auto-activate по trigger-фразам из YAML `description`.
+## Работа с агентами
 
-## Quick start
+Точки входа:
 
-1. `git clone <this-repo> my-new-project && cd my-new-project`
-2. Открыть в Claude Code или Codex.
-3. На non-design промпте (например, «создай ветку git lp-test») idle-токены ≤ 30k — adapter не подтягивает skills.
-4. На design-промпте («собери экран wallet», «оцени дизайн») — соответствующий capability skill активируется автоматически.
-5. Конвенция расширения skills — `.agents/README.md`.
+- [`AGENTS.md`](AGENTS.md) — переходный адаптер для Codex;
+- [`CLAUDE.md`](CLAUDE.md) — переходный адаптер для Claude Code;
+- [`.agents/README.md`](.agents/README.md) — legacy-конвенция архитектуры skills.
 
-## Token budget
+Codex читает `.agents/skills/` напрямую. Claude использует `.claude/skills` как symlink на `../.agents/skills`.
 
-Core Value (PROJECT.md): idle-сессия ≤ 30k токенов на non-design промпте.
+Текущие `carnica-*` skills разрешено использовать только для анализа архитектуры исходного шаблона, аудита legacy и подготовки миграции. Их нельзя использовать для создания финальных VK-интерфейсов или как подтверждение соответствия дизайн-системе VK.
 
-| Stage | Carnica-only idle | Note |
-|---|---|---|
-| Pre-migration | ~42k structural proxy | `.claude/rules/*` auto-loaded |
-| Post-Phase-4 | ~0.6k structural proxy | CLEANUP-01 (D-54) + ADAPTER |
-| v1.0 shipped (real /context) | **~3.8k** | CLAUDE.md 0.8k + Skills metadata 3.0k. Margin -26.2k под target. |
+## Целевой workflow
 
-Verify в свежей сессии: `/clear` → любой non-design промпт → `/context`. Полная v1.0 регрессия — `.planning/milestones/v1.0-phases/05-cleanup-verify/05-VERIFICATION.md`.
+`brief → prototype → critique → final QA`
 
-## Golden samples
-
-`golden-samples/` — **evidence, не ground truth.** См. `golden-samples/README.md` для контекста. Capability skills (особенно `carnica-figma-design`) генерируют **по принципам**, не воспроизведением golden-экранов.
-
-## Переносимость
-
-Для нового проекта копировать:
-
-1. `.agents/skills/` (canonical, 16 skills — 10 reference + 6 capability)
-2. `.agents/README.md` (canonical convention для skills)
-3. `.claude/skills/` (parent-symlink на `../.agents/skills/` — пересоздать командой из `.agents/README.md` § 12)
-4. `src/carnica/` (runtime код: tokens, icons, stub-components)
-5. `assets/` (BeelineSans fonts, hero images)
-6. Нужный adapter в корне: `CLAUDE.md` для Claude Code или `AGENTS.md` для Codex
-
-Команда пересоздания symlink в новом репозитории:
-
-```bash
-cd .claude && rm -rf skills && ln -s ../.agents/skills skills
-```
-
-Платформа: macOS / Linux. Windows — v2 scope (см. `.agents/README.md` § 13).
-
-После клонирования сразу читай Architecture + Quick start выше — это и есть полный onboarding-путь.
+Это целевой workflow. Соответствующие `vk-commerce-*` capability skills ещё не созданы и не являются работающей частью репозитория.
 
 ## Документация
 
-- Конвенция skills — `.agents/README.md`
-- Legacy `rules/` cleanup history — `.agents/README.md` § 18
-- Golden samples disclaimer — `golden-samples/README.md`
-- Milestone history — `.planning/MILESTONES.md`
+- [`docs/product-scope.md`](docs/product-scope.md) — цель, пользователи, область продукта, MVP и критерии успеха;
+- [`docs/migration-map.md`](docs/migration-map.md) — карта переноса Carnica → VK Social Commerce, целевая структура и порядок этапов;
+- [`docs/migration-status.md`](docs/migration-status.md) — актуальное состояние слоёв миграции и следующий этап;
+- [`AGENTS.md`](AGENTS.md) — правила и ограничения для Codex;
+- [`CLAUDE.md`](CLAUDE.md) — эквивалентные правила и ограничения для Claude Code.
+
+## Legacy Carnica foundation
+
+Исходный репозиторий содержал 16 Carnica skills. Legacy-слой также включает компоненты, токены, иконки, паспорта компонентов, golden samples и showcase.
+
+Эта часть временно сохраняется, чтобы миграция не разрушила рабочую архитектуру агентов и progressive disclosure. Она не является основной ценностью текущего продукта и не служит source of truth для VK.
+
+Переименование Carnica-файлов не считается полноценным переносом. Legacy будет удаляться только после появления и проверки соответствующей VK-замены.
+
+## Локальный запуск showcase
+
+Текущий showcase является legacy и пока отображает материалы Carnica. Его `package.json` и `package-lock.json` находятся в `apps/showcase`, поэтому зависимости и команды запуска выполняются из этой папки:
+
+```bash
+cd apps/showcase
+npm ci
+npm run dev
+```
+
+Vite запускает локальный сервер разработки; адрес будет показан в терминале.
+
+Проверка production-сборки:
+
+```bash
+cd apps/showcase
+npm run build
+```
+
+Предпросмотр собранной версии:
+
+```bash
+cd apps/showcase
+npm run preview
+```
+
+## Структура репозитория
+
+- `.agents/` — архитектура skills и текущие legacy skills;
+- `.claude/` — доступ Claude к общей директории skills;
+- `apps/showcase/` — legacy showcase на Vite и React;
+- `docs/` — продуктовая и миграционная документация;
+- `src/carnica/` — legacy-реализация Carnica;
+- `golden-samples/` — legacy reference examples;
+- `AGENTS.md` и `CLAUDE.md` — переходные адаптеры агентов.
+
+## Следующий этап
+
+Следующий этап — аудит реальных источников дизайн-системы VK:
+
+- Figma-библиотеки;
+- токены;
+- типографика;
+- иконки;
+- компоненты;
+- продуктовые паттерны Соц-коммерции.
