@@ -1,0 +1,146 @@
+.root {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  flex: 0 0 auto;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  overflow: visible;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.content {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--avatar-text-color);
+  background: var(--avatar-background-color);
+  border: var(--avatar-border-width) solid var(--avatar-image-border-color);
+  border-radius: var(--avatar-radius);
+}
+
+.picture,
+.pictureFallback {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--avatar-background-color);
+}
+
+.picture {
+  object-fit: cover;
+}
+
+.text {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0 2px;
+  overflow: hidden;
+  font-family: var(--avatar-font-family);
+  font-size: var(--avatar-text-size);
+  font-weight: var(--avatar-font-weight);
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--avatar-text-color);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--avatar-icon-size);
+  height: var(--avatar-icon-size);
+  color: var(--avatar-icon-color);
+}
+
+.icon > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: var(--avatar-overlay-color);
+  border-radius: var(--avatar-radius);
+}
+
+.storyRing {
+  position: absolute;
+  z-index: 2;
+  box-sizing: border-box;
+  pointer-events: none;
+  border-style: solid;
+}
+
+.storySeparator {
+  border-color: var(--avatar-story-separator-color);
+  border-width: var(--avatar-story-separator-width);
+}
+
+.storyAccent {
+  border-color: var(--avatar-story-accent-color);
+  border-width: var(--avatar-story-accent-width);
+}
+
+.storyRing[data-placement='inside'] {
+  inset: 0;
+  border-radius: var(--avatar-radius);
+}
+
+.storySeparator[data-placement='outside'] {
+  inset: var(--avatar-story-separator-offset);
+  border-radius: var(--avatar-story-separator-radius);
+}
+
+.storyAccent[data-placement='outside'] {
+  inset: var(--avatar-story-accent-offset);
+  border-radius: var(--avatar-story-accent-radius);
+}
+
+.slot {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  overflow: visible;
+  line-height: normal;
+}
+
+.topLeftSlot {
+  top: 0;
+  left: 0;
+}
+
+.topRightSlot {
+  top: 0;
+  right: 0;
+}
+
+.bottomRightSlot {
+  right: 0;
+  bottom: 0;
+}
+
+.bottomLeftSlot {
+  bottom: 0;
+  left: 0;
+}
