@@ -10,6 +10,7 @@ import { ChangelogPage } from './pages/ChangelogPage';
 import { RulesPage } from './pages/RulesPage';
 import { NotesPage } from './pages/NotesPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { VkAvatarPage } from './pages/VkAvatarPage';
 
 import { StubComponentPage } from './pages/components/StubComponentPage';
 
@@ -133,6 +134,10 @@ export function Showcase() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [path]);
+
+  if (path === '/vk-components/avatar') {
+    return <VkAvatarPage />;
+  }
 
   function handleLogout() {
     void authLogout();

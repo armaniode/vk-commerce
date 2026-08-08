@@ -51,6 +51,16 @@ export function Sidebar({ currentPath }: Props) {
           редполитика
         </NavLink>
 
+        <Accordion title="VK Components" defaultOpen>
+          <NavLink
+            href="#/vk-components/avatar"
+            active={currentPath === '/vk-components/avatar'}
+            nested
+          >
+            Avatar
+          </NavLink>
+        </Accordion>
+
         {/* компоненты — аккордеон, дети сортируются по алфавиту */}
         <Accordion title="компоненты" defaultOpen>
           {components.map((it) => (
