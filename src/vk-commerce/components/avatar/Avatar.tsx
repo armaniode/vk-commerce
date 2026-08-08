@@ -122,6 +122,10 @@ export function Avatar({
   const sizeConfig = AVATAR_SIZE_CONFIG[size];
   const colors = getSemanticColors(theme);
   const platformConfig = getPlatformTokens(platform);
+  const avatarFontFamily =
+    platform === 'android'
+      ? `"${platformConfig.typography.family.base}", Roboto, Arial, sans-serif`
+      : platformConfig.typography.family.base;
   const resolvedStoryPlacement =
     storyRingPlacement === 'auto' ? sizeConfig.storyPlacement : storyRingPlacement;
   const slotsAvailable = size >= 24;
@@ -141,7 +145,7 @@ export function Avatar({
     '--avatar-background-color': colors.background.secondary,
     '--avatar-text-color': colors.text.primary,
     '--avatar-icon-color': colors.icon.primary,
-    '--avatar-font-family': platformConfig.typography.family.base,
+    '--avatar-font-family': avatarFontFamily,
     '--avatar-font-weight': platformConfig.typography.weight.semibold,
     '--avatar-overlay-color': colors.other.overlaySecondary,
     '--avatar-story-accent-color': colors.stroke.accent,
