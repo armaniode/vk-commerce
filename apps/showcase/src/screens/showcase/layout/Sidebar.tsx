@@ -59,6 +59,13 @@ export function Sidebar({ currentPath }: Props) {
           >
             Avatar
           </NavLink>
+          <NavLink
+            href="#/vk-components/users-stack"
+            active={currentPath === '/vk-components/users-stack'}
+            nested
+          >
+            Users Stack
+          </NavLink>
         </Accordion>
 
         {/* компоненты — аккордеон, дети сортируются по алфавиту */}
