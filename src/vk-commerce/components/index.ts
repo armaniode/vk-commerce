@@ -5,3 +5,10 @@ export type {
   AvatarSize,
   StoryRingPlacement,
 } from './avatar';
+
+export { UsersStack } from './users-stack';
+export type {
+  UsersStackProps,
+  UsersStackUser,
+  UsersStackUsers,
+} from './users-stack';

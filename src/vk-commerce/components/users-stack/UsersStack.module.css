@@ -1,0 +1,50 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-width: 0;
+  height: 20px;
+  gap: var(--users-stack-gap);
+  vertical-align: middle;
+}
+
+.stack {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  height: 20px;
+}
+
+.maskedAvatar {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  width: 13.5px;
+  height: 20px;
+  margin-right: -1.5px;
+  clip-path: path('M13.5 0C11.6785 1.36832 10.5 3.54639 10.5 6V14C10.5 16.4536 11.6785 18.6317 13.5 20H6C2.68629 20 0 17.3137 0 14V6C0 2.68629 2.68629 0 6 0H13.5Z');
+}
+
+.frontAvatar {
+  position: relative;
+  z-index: 1;
+  display: block;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+}
+
+.description {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  font-family: var(--users-stack-font-family);
+  font-size: 15px;
+  font-weight: var(--users-stack-font-weight);
+  line-height: 18.5px;
+  letter-spacing: 0;
+  color: var(--users-stack-description-color);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
