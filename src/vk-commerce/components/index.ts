@@ -6,6 +6,15 @@ export type {
   StoryRingPlacement,
 } from './avatar';
 
+export { Button } from './button';
+export type {
+  ButtonAppearance,
+  ButtonMode,
+  ButtonProps,
+  ButtonSize,
+  ButtonWidth,
+} from './button';
+
 export { UsersStack } from './users-stack';
 export type {
   UsersStackProps,
