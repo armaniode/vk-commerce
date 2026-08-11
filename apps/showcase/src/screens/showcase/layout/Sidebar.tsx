@@ -60,6 +60,13 @@ export function Sidebar({ currentPath }: Props) {
             Avatar
           </NavLink>
           <NavLink
+            href="#/vk-components/button"
+            active={currentPath === '/vk-components/button'}
+            nested
+          >
+            Button
+          </NavLink>
+          <NavLink
             href="#/vk-components/users-stack"
             active={currentPath === '/vk-components/users-stack'}
             nested

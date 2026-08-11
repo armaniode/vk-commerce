@@ -11,6 +11,7 @@ import { RulesPage } from './pages/RulesPage';
 import { NotesPage } from './pages/NotesPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { VkAvatarPage } from './pages/VkAvatarPage';
+import { VkButtonPage } from './pages/VkButtonPage';
 import { VkUsersStackPage } from './pages/VkUsersStackPage';
 
 import { StubComponentPage } from './pages/components/StubComponentPage';
@@ -138,6 +139,10 @@ export function Showcase() {
 
   if (path === '/vk-components/avatar') {
     return <VkAvatarPage />;
+  }
+
+  if (path === '/vk-components/button') {
+    return <VkButtonPage />;
   }
 
   if (path === '/vk-components/users-stack') {
