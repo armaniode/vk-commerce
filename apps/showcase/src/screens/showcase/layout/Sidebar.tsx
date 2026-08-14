@@ -74,6 +74,13 @@ export function Sidebar({ currentPath }: Props) {
             >
               Input
             </NavLink>
+            <NavLink
+              href="#/vk-components/select"
+              active={currentPath === '/vk-components/select'}
+              nested
+            >
+              Select
+            </NavLink>
           </Accordion>
           <NavLink
             href="#/vk-components/users-stack"

@@ -13,6 +13,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { VkAvatarPage } from './pages/VkAvatarPage';
 import { VkButtonPage } from './pages/VkButtonPage';
 import { VkInputPage } from './pages/VkInputPage';
+import { VkSelectPage } from './pages/VkSelectPage';
 import { VkUsersStackPage } from './pages/VkUsersStackPage';
 
 import { StubComponentPage } from './pages/components/StubComponentPage';
@@ -148,6 +149,10 @@ export function Showcase() {
 
   if (path === '/vk-components/input') {
     return <VkInputPage />;
+  }
+
+  if (path === '/vk-components/select') {
+    return <VkSelectPage />;
   }
 
   if (path === '/vk-components/users-stack') {
