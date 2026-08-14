@@ -18,6 +18,9 @@ export type {
 export { Input } from './input';
 export type { InputProps, InputStatus } from './input';
 
+export { Select } from './select';
+export type { SelectProps, SelectStatus } from './select';
+
 export { UsersStack } from './users-stack';
 export type {
   UsersStackProps,

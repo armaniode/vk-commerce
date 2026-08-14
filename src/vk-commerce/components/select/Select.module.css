@@ -1,0 +1,110 @@
+.root {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: var(--select-min-height);
+  align-items: stretch;
+  gap: var(--select-content-gap);
+  margin: 0;
+  padding: var(--select-padding-vertical) var(--select-padding-horizontal);
+  overflow: hidden;
+  font: inherit;
+  font-family: var(--select-font-family);
+  font-size: var(--select-font-size);
+  font-style: normal;
+  font-weight: var(--select-font-weight);
+  line-height: var(--select-line-height);
+  letter-spacing: var(--select-letter-spacing);
+  font-synthesis: none;
+  color: var(--select-text-color);
+  text-align: left;
+  appearance: none;
+  cursor: pointer;
+  background: var(--select-background-color);
+  border: 1px solid var(--select-border-color);
+  border-radius: var(--select-radius);
+  opacity: 1;
+}
+
+.root[data-select-disabled='false'][data-select-status='default']:hover {
+  border-color: var(--select-hover-border-color);
+}
+
+.root[data-select-disabled='false'][data-select-status='default']:focus,
+.root[data-select-disabled='false'][data-select-status='default']:focus-visible,
+.root[data-select-disabled='false'][data-select-status='default'][data-select-open='true'] {
+  border-color: var(--select-active-border-color);
+}
+
+.root:focus {
+  outline: 0;
+}
+
+.root[data-select-disabled='true'] {
+  cursor: default;
+  opacity: var(--select-disabled-opacity);
+}
+
+.content,
+.chipsContent {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  align-items: center;
+}
+
+.content {
+  min-height: var(--select-chevron-size);
+  overflow: hidden;
+}
+
+.textContent {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  font-family: var(--select-font-family);
+  font-size: var(--select-font-size);
+  font-style: normal;
+  font-weight: var(--select-font-weight);
+  line-height: var(--select-line-height);
+  letter-spacing: var(--select-letter-spacing);
+  font-synthesis: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.root[data-select-content='placeholder'] .content {
+  color: var(--select-placeholder-color);
+}
+
+.chipsContent {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--select-content-gap);
+}
+
+.chevron {
+  display: flex;
+  flex: 0 0 var(--select-chevron-size);
+  flex-shrink: 0;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  width: var(--select-chevron-size);
+  min-height: var(--select-chevron-size);
+  color: var(--select-icon-color);
+}
+
+.root:not([data-select-content='chips']) .chevron {
+  height: var(--select-chevron-size);
+}
+
+.chevronGlyph {
+  display: block;
+  width: var(--select-chevron-size);
+  height: var(--select-chevron-size);
+  background: currentColor;
+  mask: url('./assets/chevron-down-20.svg') center / contain no-repeat;
+}
