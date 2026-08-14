@@ -66,6 +66,15 @@ export function Sidebar({ currentPath }: Props) {
           >
             Button
           </NavLink>
+          <Accordion title="Form Fields" defaultOpen nested>
+            <NavLink
+              href="#/vk-components/input"
+              active={currentPath === '/vk-components/input'}
+              nested
+            >
+              Input
+            </NavLink>
+          </Accordion>
           <NavLink
             href="#/vk-components/users-stack"
             active={currentPath === '/vk-components/users-stack'}
@@ -125,10 +134,12 @@ function NavLink({
 function Accordion({
   title,
   defaultOpen = false,
+  nested = false,
   children,
 }: {
   title: string;
   defaultOpen?: boolean;
+  nested?: boolean;
   children: ReactNode;
 }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -137,7 +148,10 @@ function Accordion({
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-2 px-3 py-2 rounded-pill text-body-sm text-bee-content-secondary hover:text-bee-content-primary hover:bg-bee-el-secondary transition-colors text-left"
+        className={[
+          'flex items-center gap-2 px-3 py-2 rounded-pill text-body-sm text-bee-content-secondary hover:text-bee-content-primary hover:bg-bee-el-secondary transition-colors text-left',
+          nested ? 'ml-3' : '',
+        ].filter(Boolean).join(' ')}
       >
         <span className="flex-1">{title}</span>
         <span className="text-bee-content-tertiary">

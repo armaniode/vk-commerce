@@ -1,0 +1,111 @@
+.root {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: var(--input-height);
+  overflow: hidden;
+  color: var(--input-text-color);
+  vertical-align: middle;
+  border-radius: var(--input-radius);
+  opacity: 1;
+}
+
+.root[data-input-disabled='true'] {
+  opacity: var(--input-disabled-opacity);
+}
+
+.surface {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  background: var(--input-background-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: inherit;
+}
+
+.root[data-input-disabled='false'][data-input-status='default']:hover .surface {
+  border-color: var(--input-hover-border-color);
+}
+
+.root[data-input-disabled='false'][data-input-status='default']:focus-within .surface {
+  border-color: var(--input-active-border-color);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0 var(--input-padding-horizontal);
+  gap: var(--input-content-gap);
+}
+
+.input {
+  display: block;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: var(--input-line-height);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--input-font-family);
+  font-size: var(--input-font-size);
+  font-style: normal;
+  font-weight: var(--input-font-weight);
+  line-height: var(--input-line-height);
+  letter-spacing: var(--input-letter-spacing);
+  font-synthesis: none;
+  color: var(--input-text-color);
+  text-overflow: ellipsis;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+}
+
+.input::placeholder {
+  font-weight: inherit;
+  color: var(--input-placeholder-color);
+  -webkit-text-fill-color: var(--input-placeholder-color);
+  opacity: 1;
+}
+
+.input:disabled {
+  color: inherit;
+  opacity: 1;
+  -webkit-text-fill-color: currentColor;
+}
+
+.input::-webkit-search-cancel-button,
+.input::-webkit-search-decoration {
+  appearance: none;
+}
+
+.iconSlot {
+  display: inline-flex;
+  flex: 0 0 var(--input-icon-size);
+  align-items: center;
+  justify-content: center;
+  width: var(--input-icon-size);
+  height: var(--input-icon-size);
+  color: var(--input-icon-color);
+}
+
+.iconSlot > svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  color: inherit;
+}
