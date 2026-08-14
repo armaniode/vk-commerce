@@ -15,6 +15,9 @@ export type {
   ButtonWidth,
 } from './button';
 
+export { Input } from './input';
+export type { InputProps, InputStatus } from './input';
+
 export { UsersStack } from './users-stack';
 export type {
   UsersStackProps,
