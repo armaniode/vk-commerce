@@ -14,6 +14,7 @@ import { VkAvatarPage } from './pages/VkAvatarPage';
 import { VkButtonPage } from './pages/VkButtonPage';
 import { VkInputPage } from './pages/VkInputPage';
 import { VkSelectPage } from './pages/VkSelectPage';
+import { VkTextareaPage } from './pages/VkTextareaPage';
 import { VkUsersStackPage } from './pages/VkUsersStackPage';
 
 import { StubComponentPage } from './pages/components/StubComponentPage';
@@ -153,6 +154,10 @@ export function Showcase() {
 
   if (path === '/vk-components/select') {
     return <VkSelectPage />;
+  }
+
+  if (path === '/vk-components/textarea') {
+    return <VkTextareaPage />;
   }
 
   if (path === '/vk-components/users-stack') {
