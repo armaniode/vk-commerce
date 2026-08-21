@@ -83,13 +83,3 @@
   letter-spacing: 0;
   color: var(--prototype-text-secondary);
 }
-
-.adminsSection {
-  display: flex;
-  min-width: 0;
-  align-items: center;
-}
-
-.bottomAction {
-  margin-top: auto;
-}

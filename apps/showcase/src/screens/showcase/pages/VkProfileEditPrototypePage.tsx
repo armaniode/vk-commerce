@@ -7,8 +7,6 @@ import {
   Input,
   Select,
   Textarea,
-  UsersStack,
-  type UsersStackUsers,
 } from '../../../../../../src/vk-commerce/components';
 import {
   getPlatformTokens,
@@ -22,12 +20,6 @@ const THEME = 'light' as const;
 const PLATFORM = 'ios' as const;
 const INITIAL_DESCRIPTION =
   'Небольшая студия, где мы делимся проектами,\nпроцессом и новостями команды.';
-
-const ADMIN_USERS: UsersStackUsers = [
-  { src: '/vk-users-stack-avatar-a.svg', alt: 'Анна' },
-  { src: '/vk-users-stack-avatar-b.svg', alt: 'Михаил' },
-  { src: '/vk-users-stack-avatar-c.svg', alt: 'Елена' },
-];
 
 interface PrototypeCssProperties extends CSSProperties {
   '--prototype-width': string;
@@ -214,16 +206,7 @@ export function VkProfileEditPrototypePage() {
             </div>
           </section>
 
-          <section aria-label="Администраторы" className={styles.adminsSection}>
-            <UsersStack
-              description="Администраторы"
-              platform={PLATFORM}
-              theme={THEME}
-              users={ADMIN_USERS}
-            />
-          </section>
-
-          <div className={styles.bottomAction}>
+          <div>
             <Button
               appearance="neutral"
               mode="primary"
