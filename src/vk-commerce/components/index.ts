@@ -21,6 +21,13 @@ export type { InputProps, InputStatus } from './input';
 export { Select } from './select';
 export type { SelectProps, SelectStatus } from './select';
 
+export { Textarea } from './textarea';
+export type {
+  TextareaHeight,
+  TextareaProps,
+  TextareaStatus,
+} from './textarea';
+
 export { UsersStack } from './users-stack';
 export type {
   UsersStackProps,
