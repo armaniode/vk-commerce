@@ -31,11 +31,11 @@ const TAB_ITEMS: ReadonlyArray<{
   label: string;
   asset: string;
 }> = [
-  { id: 'home', label: 'Главная', asset: 'tab-home.png' },
-  { id: 'search', label: 'Поиск', asset: 'tab-search.png' },
-  { id: 'messages', label: 'Сообщения', asset: 'tab-messages.png' },
-  { id: 'music', label: 'Музыка', asset: 'tab-music.png' },
-  { id: 'menu', label: 'Меню', asset: 'tab-menu.png' },
+  { id: 'home', label: 'Главная', asset: 'icons/home-28.svg' },
+  { id: 'search', label: 'Поиск', asset: 'icons/search-filled-28.svg' },
+  { id: 'messages', label: 'Сообщения', asset: 'icons/bubble-text-28.svg' },
+  { id: 'music', label: 'Музыка', asset: 'icons/music-28.svg' },
+  { id: 'menu', label: 'Меню', asset: 'icons/menu-28.svg' },
 ];
 
 interface PrototypeCssProperties extends CSSProperties {
@@ -89,7 +89,11 @@ function PostHeader({ subscribed, onSubscribe }: PostHeaderProps) {
           {subscribed ? 'Вы подписаны' : 'Подписаться'}
         </Button>
         <button className={styles.moreAction} type="button" aria-label="Ещё">
-          <img alt="" aria-hidden="true" src={`${ASSET_ROOT}/more.png`} />
+          <img
+            alt=""
+            aria-hidden="true"
+            src={`${ASSET_ROOT}/icons/more-horizontal-20.svg`}
+          />
         </button>
       </div>
     </header>
@@ -100,7 +104,6 @@ export function VkHashtagFeedPrototypePage() {
   const [subscribed, setSubscribed] = useState(false);
   const [liked, setLiked] = useState(false);
   const [expanded, setExpanded] = useState(false);
-  const [activeTab, setActiveTab] = useState<TabId>('search');
   const colors = getSemanticColors(THEME);
   const platform = getPlatformTokens(PLATFORM);
   const style: PrototypeCssProperties = {
@@ -128,13 +131,6 @@ export function VkHashtagFeedPrototypePage() {
     <div className={styles.page} style={style}>
       <main className={styles.screen} aria-label="Лента хэштега майские моменты">
         <div className={styles.topBar}>
-          <img
-            alt=""
-            aria-hidden="true"
-            className={styles.topBarAsset}
-            src={`${ASSET_ROOT}/top-bar.png`}
-          />
-          <h1 className={styles.visuallyHidden}>#майскиемоменты</h1>
           <button
             aria-label="Назад"
             className={styles.backAction}
@@ -142,11 +138,17 @@ export function VkHashtagFeedPrototypePage() {
               window.location.hash = '#/vk-prototypes/profile-edit';
             }}
             type="button"
-          />
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src={`${ASSET_ROOT}/icons/chevron-left-28.svg`}
+            />
+          </button>
+          <h1 className={styles.title}>#майскиемоменты</h1>
         </div>
 
         <div className={styles.feed}>
-          <div aria-hidden="true" className={styles.topSpacing} />
           <div className={styles.posts}>
             <article className={styles.post}>
               <PostHeader
@@ -178,17 +180,38 @@ export function VkHashtagFeedPrototypePage() {
               </div>
 
               <footer className={styles.postFooter}>
-                <img alt="" aria-hidden="true" src={`${ASSET_ROOT}/post-footer.png`} />
-                <button
-                  aria-label={liked ? 'Убрать отметку нравится' : 'Нравится'}
-                  aria-pressed={liked}
-                  className={styles.likeAction}
-                  onClick={() => setLiked((current) => !current)}
-                  type="button"
-                />
-                {liked ? <span className={styles.likeCount}>77</span> : null}
-                <button aria-label="Комментарии" className={styles.commentAction} type="button" />
-                <button aria-label="Поделиться" className={styles.shareAction} type="button" />
+                <div className={styles.footerActions}>
+                  <button
+                    aria-label={liked ? 'Убрать отметку нравится' : 'Нравится'}
+                    aria-pressed={liked}
+                    className={styles.footerAction}
+                    onClick={() => setLiked((current) => !current)}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      src={`${ASSET_ROOT}/icons/heart-outline-24.svg`}
+                    />
+                    <span>{liked ? 77 : 76}</span>
+                  </button>
+                  <button aria-label="Комментарии" className={styles.footerAction} type="button">
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      src={`${ASSET_ROOT}/icons/bubble-outline-24.svg`}
+                    />
+                    <span>5</span>
+                  </button>
+                  <button aria-label="Поделиться" className={styles.footerAction} type="button">
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      src={`${ASSET_ROOT}/icons/share-outline-24.svg`}
+                    />
+                  </button>
+                </div>
+                <span className={styles.postAge}>1 д назад</span>
               </footer>
             </article>
 
@@ -210,19 +233,17 @@ export function VkHashtagFeedPrototypePage() {
           <div className={styles.tabItems}>
             {TAB_ITEMS.map((item) => (
               <button
-                aria-current={activeTab === item.id ? 'page' : undefined}
+                aria-current={item.id === 'search' ? 'page' : undefined}
                 aria-label={item.label}
                 className={styles.tabItem}
-                data-active={activeTab === item.id}
+                data-active={item.id === 'search'}
                 key={item.id}
-                onClick={() => setActiveTab(item.id)}
                 type="button"
               >
                 <img alt="" aria-hidden="true" src={`${ASSET_ROOT}/${item.asset}`} />
               </button>
             ))}
           </div>
-          <span aria-hidden="true" className={styles.homeIndicator} />
         </nav>
       </main>
     </div>
