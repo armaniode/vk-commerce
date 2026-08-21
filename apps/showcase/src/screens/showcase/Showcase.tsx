@@ -14,6 +14,7 @@ import { VkAvatarPage } from './pages/VkAvatarPage';
 import { VkButtonPage } from './pages/VkButtonPage';
 import { VkDatePickerPage } from './pages/VkDatePickerPage';
 import { VkInputPage } from './pages/VkInputPage';
+import { VkProfileEditPrototypePage } from './pages/VkProfileEditPrototypePage';
 import { VkSelectPage } from './pages/VkSelectPage';
 import { VkTextareaPage } from './pages/VkTextareaPage';
 import { VkUsersStackPage } from './pages/VkUsersStackPage';
@@ -167,6 +168,10 @@ export function Showcase() {
 
   if (path === '/vk-components/users-stack') {
     return <VkUsersStackPage />;
+  }
+
+  if (path === '/vk-prototypes/profile-edit') {
+    return <VkProfileEditPrototypePage />;
   }
 
   function handleLogout() {

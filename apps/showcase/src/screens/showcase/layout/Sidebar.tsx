@@ -105,6 +105,16 @@ export function Sidebar({ currentPath }: Props) {
           </NavLink>
         </Accordion>
 
+        <Accordion title="PROTOTYPES" defaultOpen>
+          <NavLink
+            href="#/vk-prototypes/profile-edit"
+            active={currentPath === '/vk-prototypes/profile-edit'}
+            nested
+          >
+            Profile Edit · iOS
+          </NavLink>
+        </Accordion>
+
         {/* компоненты — аккордеон, дети сортируются по алфавиту */}
         <Accordion title="компоненты" defaultOpen>
           {components.map((it) => (

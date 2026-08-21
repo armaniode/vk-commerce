@@ -124,6 +124,8 @@ const BUTTON_SIZE_CONFIG = {
 
 const BUTTON_CONTENT_GAP = spacing.sizeS;
 const BUTTON_DISABLED_OPACITY = 0.52;
+const IOS_FONT_FAMILY =
+  '-apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, sans-serif';
 const NEUTRAL_PRIMARY_BACKGROUND = '#212121';
 const OVERLAY_PRIMARY_BACKGROUND = 'rgba(255, 255, 255, 0.8)';
 
@@ -387,9 +389,11 @@ export function Button(props: ButtonProps) {
   const isIconOnly =
     'icon' in contentAndButtonProps && contentAndButtonProps.icon != null;
   const buttonFontFamily =
-    platform === 'android'
-      ? `"${platformConfig.typography.family.base}", Roboto, Arial, sans-serif`
-      : platformConfig.typography.family.base;
+    platform === 'ios'
+      ? IOS_FONT_FAMILY
+      : platform === 'android'
+        ? `"${platformConfig.typography.family.base}", Roboto, Arial, sans-serif`
+        : platformConfig.typography.family.base;
   const style: ButtonCssProperties = {
     '--button-height': `${sizeConfig.height}px`,
     '--button-radius': `${sizeConfig.radius}px`,
