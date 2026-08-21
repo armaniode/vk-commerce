@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactElement } from 'react';
+import { lazy, Suspense, useEffect, useState, type ReactElement } from 'react';
 import { useHashRoute } from './lib/useHashRoute';
 import { SEED_COMPONENTS } from './componentsData';
 
@@ -37,6 +37,12 @@ import { ZoomModal } from './layout/ZoomModal';
 import { LoginPage } from './pages/LoginPage';
 import { getCurrentUser, logout as authLogout, onAuthChange, type User } from './lib/auth';
 import { UserContext } from './lib/UserContext';
+
+const VkHashtagFeedPrototypePage = lazy(async () => {
+  const module = await import('./pages/VkHashtagFeedPrototypePage');
+
+  return { default: module.VkHashtagFeedPrototypePage };
+});
 
 // ─────────────────────────────────────────────────────────────
 // маппинг id компонента → live-страница; всё, чего тут нет —
@@ -172,6 +178,14 @@ export function Showcase() {
 
   if (path === '/vk-prototypes/profile-edit') {
     return <VkProfileEditPrototypePage />;
+  }
+
+  if (path === '/vk-prototypes/hashtag-feed') {
+    return (
+      <Suspense fallback={null}>
+        <VkHashtagFeedPrototypePage />
+      </Suspense>
+    );
   }
 
   function handleLogout() {

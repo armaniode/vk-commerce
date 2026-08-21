@@ -113,6 +113,13 @@ export function Sidebar({ currentPath }: Props) {
           >
             Profile Edit · iOS
           </NavLink>
+          <NavLink
+            href="#/vk-prototypes/hashtag-feed"
+            active={currentPath === '/vk-prototypes/hashtag-feed'}
+            nested
+          >
+            Hashtag Feed · iOS
+          </NavLink>
         </Accordion>
 
         {/* компоненты — аккордеон, дети сортируются по алфавиту */}
