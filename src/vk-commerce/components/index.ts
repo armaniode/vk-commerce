@@ -15,6 +15,13 @@ export type {
   ButtonWidth,
 } from './button';
 
+export { DatePicker } from './date-picker';
+export type {
+  DatePickerProps,
+  DatePickerStatus,
+  DatePickerType,
+} from './date-picker';
+
 export { Input } from './input';
 export type { InputProps, InputStatus } from './input';
 

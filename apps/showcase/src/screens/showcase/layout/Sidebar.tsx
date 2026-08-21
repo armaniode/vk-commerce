@@ -88,6 +88,13 @@ export function Sidebar({ currentPath }: Props) {
             >
               Textarea
             </NavLink>
+            <NavLink
+              href="#/vk-components/date-picker"
+              active={currentPath === '/vk-components/date-picker'}
+              nested
+            >
+              Date Picker
+            </NavLink>
           </Accordion>
           <NavLink
             href="#/vk-components/users-stack"
