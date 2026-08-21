@@ -12,6 +12,7 @@ import { NotesPage } from './pages/NotesPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { VkAvatarPage } from './pages/VkAvatarPage';
 import { VkButtonPage } from './pages/VkButtonPage';
+import { VkDatePickerPage } from './pages/VkDatePickerPage';
 import { VkInputPage } from './pages/VkInputPage';
 import { VkSelectPage } from './pages/VkSelectPage';
 import { VkTextareaPage } from './pages/VkTextareaPage';
@@ -146,6 +147,10 @@ export function Showcase() {
 
   if (path === '/vk-components/button') {
     return <VkButtonPage />;
+  }
+
+  if (path === '/vk-components/date-picker') {
+    return <VkDatePickerPage />;
   }
 
   if (path === '/vk-components/input') {
