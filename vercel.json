@@ -1,8 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "cd apps/showcase && npm ci",
-  "buildCommand": "cd apps/showcase && npm run build",
-  "outputDirectory": "apps/showcase/dist",
   "rewrites": [
     {
       "source": "/(.*)",
