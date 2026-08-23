@@ -1,12 +1,10 @@
-import { useState, type CSSProperties, type ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 
-import calendarIconUrl from '../../../../../../src/vk-commerce/components/date-picker/assets/calendar-outline-24.svg';
-import clearIconUrl from '../../../../../../src/vk-commerce/components/date-picker/assets/clear-16.svg';
-import chevronIconUrl from '../../../../../../src/vk-commerce/components/select/assets/chevron-down-20.svg';
 import {
   SegmentedControl,
   type SegmentedControlItems,
 } from '../../../../../../src/vk-commerce/components';
+import { Icon } from '../../../../../../src/vk-commerce/icons';
 import type {
   PlatformMode,
   ThemeMode,
@@ -44,24 +42,24 @@ const ICON_AND_LABEL_ITEMS = [
   {
     value: 'calendar',
     label: 'Calendar',
-    icon: <DemoIcon src={calendarIconUrl} />,
+    icon: <Icon name="calendar_outline" size={16} />,
   },
   {
     value: 'options',
     label: 'Options',
-    icon: <DemoIcon src={chevronIconUrl} />,
+    icon: <Icon name="chevron_down_outline" size={16} />,
   },
 ] as const satisfies SegmentedControlItems;
 
 const ICON_ONLY_ITEMS = [
   {
     value: 'calendar',
-    icon: <DemoIcon src={calendarIconUrl} />,
+    icon: <Icon name="calendar_outline" size={16} />,
     ariaLabel: 'Calendar',
   },
   {
     value: 'clear',
-    icon: <DemoIcon src={clearIconUrl} />,
+    icon: <Icon name="cross_outline" size={16} />,
     ariaLabel: 'Clear',
   },
 ] as const satisfies SegmentedControlItems;
@@ -193,7 +191,7 @@ export function VkSegmentedControlPage() {
         </QaSection>
 
         <QaSection
-          description="Icon slots используют только существующие локальные assets."
+          description="Production Lego Icons используют точные 16px sources внутри 20px slots."
           title="Content"
         >
           <div className={styles.sampleGrid}>
@@ -395,16 +393,4 @@ function ControlButton({
       {label}
     </button>
   );
-}
-
-interface DemoIconCssProperties extends CSSProperties {
-  '--demo-icon-url': string;
-}
-
-function DemoIcon({ src }: { src: string }) {
-  const style: DemoIconCssProperties = {
-    '--demo-icon-url': `url("${src}")`,
-  };
-
-  return <span className={styles.demoIcon} style={style} />;
 }

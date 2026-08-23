@@ -94,17 +94,10 @@
   justify-content: center;
   width: var(--select-chevron-size);
   min-height: var(--select-chevron-size);
+  line-height: 0;
   color: var(--select-icon-color);
 }
 
 .root:not([data-select-content='chips']) .chevron {
   height: var(--select-chevron-size);
-}
-
-.chevronGlyph {
-  display: block;
-  width: var(--select-chevron-size);
-  height: var(--select-chevron-size);
-  background: currentColor;
-  mask: url('./assets/chevron-down-20.svg') center / contain no-repeat;
 }
