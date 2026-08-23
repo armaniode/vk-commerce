@@ -1,51 +1,18 @@
-/* Каноничные CSS-vars темы Carnica. Источник правды — src/carnica/styles/theme.css.
-   Любой другой проект подключает этот же файл (через @import или копию).
-   @import обязан идти ПЕРЕД @tailwind — иначе PostCSS ругается. */
-@import '../../../src/carnica/styles/theme.css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@font-face {
-  font-family: 'BeelineSans';
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/BeelineSans-Regular.ttf') format('truetype');
+html,
+body,
+#root {
+  height: 100%;
 }
 
-@font-face {
-  font-family: 'BeelineSans';
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/BeelineSans-Medium.ttf') format('truetype');
+html {
+  scrollbar-gutter: stable;
 }
 
-@layer base {
-  html, body, #root {
-    height: 100%;
-  }
-  /* резерв места под scrollbar даже когда контент не переполняет —
-     иначе модалка с overflow:hidden на body двигает страницу */
-  html {
-    scrollbar-gutter: stable;
-  }
-  body {
-    @apply font-sans bg-bee-bg-primary text-bee-content-primary antialiased;
-    margin: 0;
-    transition: background-color 200ms ease, color 200ms ease;
-  }
-}
-
-@layer utilities {
-  /* скролл есть, но визуально не отображается (sidebar, pill-group и т.п.) */
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
+body {
+  margin: 0;
+  color: #3b3b3b;
+  background: #f7f7f7;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 200ms ease, color 200ms ease;
 }
