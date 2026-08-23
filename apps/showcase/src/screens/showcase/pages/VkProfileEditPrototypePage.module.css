@@ -9,11 +9,14 @@
 .screen {
   display: flex;
   box-sizing: border-box;
-  width: min(100%, var(--prototype-width));
+  width: 100%;
+  max-width: var(--prototype-width);
   min-height: var(--prototype-min-height);
   flex-direction: column;
   font-family: var(--prototype-font-family);
   background: var(--prototype-page-background);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .topBar {
@@ -82,4 +85,10 @@
   line-height: 20px;
   letter-spacing: 0;
   color: var(--prototype-text-secondary);
+}
+
+@media (max-width: 600px) {
+  .screen {
+    max-width: none;
+  }
 }

@@ -19,6 +19,8 @@
   overflow: hidden;
   font-family: var(--hashtag-font-family);
   background: var(--hashtag-page-background);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 @supports (height: 100dvh) {
