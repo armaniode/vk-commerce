@@ -1,0 +1,83 @@
+.root {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: var(--segmented-control-padding);
+  overflow: hidden;
+  background: var(--segmented-control-background);
+  border-radius: var(--segmented-control-radius);
+}
+
+.item {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: var(--segmented-control-item-min-height);
+  margin: 0;
+  padding: var(--segmented-control-item-padding);
+  gap: var(--segmented-control-content-gap);
+  overflow: visible;
+  font: inherit;
+  font-family: var(--segmented-control-font-family);
+  font-size: var(--segmented-control-font-size);
+  font-style: normal;
+  font-weight: var(--segmented-control-font-weight);
+  line-height: var(--segmented-control-line-height);
+  letter-spacing: var(--segmented-control-letter-spacing);
+  font-synthesis: none;
+  color: var(--segmented-control-inactive-color);
+  text-align: center;
+  appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.item[data-segmented-control-state='active'] {
+  color: var(--segmented-control-active-color);
+  background: var(--segmented-control-active-background);
+  border-radius: var(--segmented-control-item-radius);
+}
+
+.item:focus-visible {
+  outline: 2px solid var(--segmented-control-focus-color);
+  outline-offset: -2px;
+}
+
+.iconSlot,
+.iconGlyph {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+.iconSlot {
+  width: var(--segmented-control-icon-size);
+  height: var(--segmented-control-icon-size);
+}
+
+.iconGlyph {
+  width: var(--segmented-control-glyph-size);
+  height: var(--segmented-control-glyph-size);
+}
+
+.iconGlyph > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.label {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
