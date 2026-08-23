@@ -133,15 +133,17 @@
 
 .calendarIcon,
 .clearGlyph {
-  display: block;
-  background: var(--date-picker-icon-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  color: var(--date-picker-icon-color);
 }
 
 .calendarIcon {
   flex: 0 0 var(--date-picker-calendar-size);
   width: var(--date-picker-calendar-size);
   height: var(--date-picker-calendar-size);
-  mask: url('./assets/calendar-outline-24.svg') center / contain no-repeat;
 }
 
 .clearAction {
@@ -154,7 +156,9 @@
 }
 
 .clearGlyph {
+  display: block;
   width: var(--date-picker-clear-glyph-size);
   height: var(--date-picker-clear-glyph-size);
+  background: currentColor;
   mask: url('./assets/clear-16.svg') center / contain no-repeat;
 }

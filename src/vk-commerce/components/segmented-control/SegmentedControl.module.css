@@ -54,18 +54,20 @@
 .iconSlot,
 .iconGlyph {
   display: inline-flex;
-  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
   color: inherit;
+  line-height: 0;
 }
 
 .iconSlot {
+  flex: 0 0 var(--segmented-control-icon-size);
   width: var(--segmented-control-icon-size);
   height: var(--segmented-control-icon-size);
 }
 
 .iconGlyph {
+  flex: 0 0 var(--segmented-control-glyph-size);
   width: var(--segmented-control-glyph-size);
   height: var(--segmented-control-glyph-size);
 }

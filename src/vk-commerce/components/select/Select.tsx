@@ -5,6 +5,7 @@ import {
   type ReactNode,
 } from 'react';
 
+import { Icon } from '../../icons';
 import {
   getPlatformTokens,
   getSemanticColors,
@@ -173,7 +174,7 @@ export const Select = forwardRef<HTMLButtonElement, SelectProps>(function Select
       </span>
 
       <span aria-hidden="true" className={styles.chevron}>
-        <span className={styles.chevronGlyph} />
+        <Icon name="chevron_down" size={20} />
       </span>
     </button>
   );

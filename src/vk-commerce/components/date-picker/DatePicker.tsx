@@ -5,6 +5,7 @@ import {
   type MouseEventHandler,
 } from 'react';
 
+import { Icon } from '../../icons';
 import {
   getPlatformTokens,
   getSemanticColors,
@@ -249,7 +250,9 @@ export const DatePicker = forwardRef<HTMLButtonElement, DatePickerProps>(
           </span>
 
           {!filled ? (
-            <span aria-hidden="true" className={styles.calendarIcon} />
+            <span aria-hidden="true" className={styles.calendarIcon}>
+              <Icon name="calendar_outline" size={24} />
+            </span>
           ) : null}
         </button>
 
