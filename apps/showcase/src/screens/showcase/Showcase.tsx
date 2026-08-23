@@ -2,6 +2,7 @@ import type { ReactElement } from 'react';
 
 import { useHashRoute } from './lib/useHashRoute';
 import { VkAvatarPage } from './pages/VkAvatarPage';
+import { VkBottomBarPage } from './pages/VkBottomBarPage';
 import { VkButtonPage } from './pages/VkButtonPage';
 import { VkDatePickerPage } from './pages/VkDatePickerPage';
 import { VkInputPage } from './pages/VkInputPage';
@@ -16,6 +17,7 @@ import { VkUsersStackPage } from './pages/VkUsersStackPage';
 const VK_ROUTES: Record<string, () => ReactElement> = {
   '/vk-foundations/icons': VkIconsPage,
   '/vk-components/avatar': VkAvatarPage,
+  '/vk-components/bottom-bar': VkBottomBarPage,
   '/vk-components/button': VkButtonPage,
   '/vk-components/date-picker': VkDatePickerPage,
   '/vk-components/input': VkInputPage,

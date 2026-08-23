@@ -16,6 +16,7 @@ const NAVIGATION_GROUPS = [
     title: 'VK Components',
     links: [
       { label: 'Avatar', href: '#/vk-components/avatar' },
+      { label: 'Bottom Bar', href: '#/vk-components/bottom-bar' },
       { label: 'Button', href: '#/vk-components/button' },
       {
         label: 'Segmented Control',
