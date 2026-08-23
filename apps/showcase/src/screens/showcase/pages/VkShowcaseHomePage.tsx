@@ -13,6 +13,10 @@ const NAVIGATION_GROUPS = [
     links: [
       { label: 'Avatar', href: '#/vk-components/avatar' },
       { label: 'Button', href: '#/vk-components/button' },
+      {
+        label: 'Segmented Control',
+        href: '#/vk-components/segmented-control',
+      },
       { label: 'Users Stack', href: '#/vk-components/users-stack' },
     ],
   },

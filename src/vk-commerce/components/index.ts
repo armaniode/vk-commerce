@@ -28,6 +28,13 @@ export type { InputProps, InputStatus } from './input';
 export { Select } from './select';
 export type { SelectProps, SelectStatus } from './select';
 
+export { SegmentedControl } from './segmented-control';
+export type {
+  SegmentedControlItem,
+  SegmentedControlItems,
+  SegmentedControlProps,
+} from './segmented-control';
+
 export { Textarea } from './textarea';
 export type {
   TextareaHeight,

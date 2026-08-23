@@ -6,6 +6,7 @@ import { VkButtonPage } from './pages/VkButtonPage';
 import { VkDatePickerPage } from './pages/VkDatePickerPage';
 import { VkInputPage } from './pages/VkInputPage';
 import { VkProfileEditPrototypePage } from './pages/VkProfileEditPrototypePage';
+import { VkSegmentedControlPage } from './pages/VkSegmentedControlPage';
 import { VkSelectPage } from './pages/VkSelectPage';
 import { VkShowcaseHomePage } from './pages/VkShowcaseHomePage';
 import { VkTextareaPage } from './pages/VkTextareaPage';
@@ -16,6 +17,7 @@ const VK_ROUTES: Record<string, () => ReactElement> = {
   '/vk-components/button': VkButtonPage,
   '/vk-components/date-picker': VkDatePickerPage,
   '/vk-components/input': VkInputPage,
+  '/vk-components/segmented-control': VkSegmentedControlPage,
   '/vk-components/select': VkSelectPage,
   '/vk-components/textarea': VkTextareaPage,
   '/vk-components/users-stack': VkUsersStackPage,
