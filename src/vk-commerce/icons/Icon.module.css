@@ -1,0 +1,22 @@
+.icon {
+  display: inline-block;
+  flex: 0 0 var(--vk-icon-size);
+  width: var(--vk-icon-size);
+  height: var(--vk-icon-size);
+  color: inherit;
+  line-height: var(--vk-icon-size);
+  vertical-align: baseline;
+  background-color: currentcolor;
+  -webkit-mask-image: var(--vk-icon-source);
+  mask-image: var(--vk-icon-source);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.icon::after {
+  content: '\200b';
+}
