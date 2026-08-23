@@ -1,0 +1,52 @@
+/* Каноничные CSS-vars темы Carnica. Источник правды — src/carnica/styles/theme.css.
+   Legacy entrypoint подключает их отдельно от VK showcase. */
+@import '../../../src/carnica/styles/theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'BeelineSans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/BeelineSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BeelineSans';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/BeelineSans-Medium.ttf') format('truetype');
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    @apply font-sans bg-bee-bg-primary text-bee-content-primary antialiased;
+    margin: 0;
+    transition: background-color 200ms ease, color 200ms ease;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

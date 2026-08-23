@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:legacy": "vite --config vite.legacy.config.ts --open /legacy.html",
     "build": "tsc -b && vite build",
+    "build:legacy": "tsc -b && vite build --config vite.legacy.config.ts",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:legacy": "vite preview --config vite.legacy.config.ts --open /legacy.html"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.1",
