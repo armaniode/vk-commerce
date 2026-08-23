@@ -41,6 +41,32 @@
 4. Использовать только подтверждённые источники и не выдавать неподтверждённые материалы за официальные.
 5. Проверить результат и перечислить использованные источники и допущения.
 
+## Vibe-coded prototype viewport rules
+
+Для всех prototype screens в `apps/showcase/**`, включая новые маршруты `#/vk-prototypes/*`, по умолчанию действуют следующие правила:
+
+1. Рендерить только UI самого приложения.
+2. Не воспроизводить из Figma:
+   - iOS Status Bar;
+   - time / cellular / Wi-Fi / battery indicators;
+   - Home Indicator;
+   - device bezel/frame;
+   - outer iPhone rounded corners;
+   - device shadow;
+   - Safari/browser chrome.
+3. Даже если эти элементы присутствуют внутри выбранного Figma frame, считать их reference-only system chrome и исключать из реализации, если пользователь явно не попросил показать device mockup.
+4. Prototype root должен иметь:
+   - no outer border-radius;
+   - no fake device frame;
+   - no outer device shadow;
+   - content starts from the viewport edge.
+5. Для корректного layout приложения на реальном устройстве разрешено использовать `env(safe-area-inset-top)` и `env(safe-area-inset-bottom)`, но нельзя рисовать системный Status Bar или Home Indicator вручную.
+6. App-owned navigation bars и tab bars сохранять:
+   - VK Top Bar / Navigation Bar — часть приложения, оставляем;
+   - VK Tab Bar — часть приложения, оставляем;
+   - iOS system Status Bar / Home Indicator — системный chrome, убираем.
+7. Применять эти правила автоматически ко всем новым `#/vk-prototypes/*` без необходимости повторять их в каждом prompt.
+
 ## Skills
 
 Конвенция описана в `.agents/README.md`. Канонический путь — `.agents/skills/`. Codex читает `.agents/skills/` напрямую.
