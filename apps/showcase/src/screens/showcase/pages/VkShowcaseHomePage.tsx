@@ -9,6 +9,10 @@ import styles from './VkShowcaseHomePage.module.css';
 
 const NAVIGATION_GROUPS = [
   {
+    title: 'Foundations',
+    links: [{ label: 'Icons', href: '#/vk-foundations/icons' }],
+  },
+  {
     title: 'VK Components',
     links: [
       { label: 'Avatar', href: '#/vk-components/avatar' },

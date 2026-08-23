@@ -5,6 +5,7 @@ import { VkAvatarPage } from './pages/VkAvatarPage';
 import { VkButtonPage } from './pages/VkButtonPage';
 import { VkDatePickerPage } from './pages/VkDatePickerPage';
 import { VkInputPage } from './pages/VkInputPage';
+import { VkIconsPage } from './pages/VkIconsPage';
 import { VkProfileEditPrototypePage } from './pages/VkProfileEditPrototypePage';
 import { VkSegmentedControlPage } from './pages/VkSegmentedControlPage';
 import { VkSelectPage } from './pages/VkSelectPage';
@@ -13,6 +14,7 @@ import { VkTextareaPage } from './pages/VkTextareaPage';
 import { VkUsersStackPage } from './pages/VkUsersStackPage';
 
 const VK_ROUTES: Record<string, () => ReactElement> = {
+  '/vk-foundations/icons': VkIconsPage,
   '/vk-components/avatar': VkAvatarPage,
   '/vk-components/button': VkButtonPage,
   '/vk-components/date-picker': VkDatePickerPage,
