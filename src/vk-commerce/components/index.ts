@@ -15,6 +15,12 @@ export type {
   ButtonWidth,
 } from './button';
 
+export { BottomBar } from './bottom-bar';
+export type {
+  BottomBarAppearance,
+  BottomBarProps,
+} from './bottom-bar';
+
 export { DatePicker } from './date-picker';
 export type {
   DatePickerProps,
