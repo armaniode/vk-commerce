@@ -67,6 +67,13 @@
    - VK Tab Bar — часть приложения, оставляем;
    - iOS system Status Bar / Home Indicator — системный chrome, убираем.
 7. Применять эти правила автоматически ко всем новым `#/vk-prototypes/*` без необходимости повторять их в каждом prompt.
+8. Высота mobile prototype root всегда определяется контентом:
+   - `874px` — reference/minimum prototype height, а не fixed height и не maximum height;
+   - если контент помещается, экран может оставаться высотой `874px`;
+   - если контенту требуется больше места, root автоматически растёт, а document/page прокручивается естественно;
+   - использовать поведение `min-height: 874px; height: auto;`;
+   - никогда не использовать `height: 874px`, `max-height: 874px` или `overflow: hidden`, чтобы принудительно уместить либо обрезать экран по reference viewport;
+   - ширина prototype следует целевому mobile viewport, а итоговая высота всегда определяется содержимым.
 
 ## Skills
 
