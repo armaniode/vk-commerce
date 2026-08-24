@@ -22,6 +22,7 @@ const NAVIGATION_GROUPS = [
         label: 'Segmented Control',
         href: '#/vk-components/segmented-control',
       },
+      { label: 'Top Bar', href: '#/vk-components/top-bar' },
       { label: 'Users Stack', href: '#/vk-components/users-stack' },
     ],
   },
