@@ -18,13 +18,11 @@ import styles from './VkProfileEditPrototypePage.module.css';
 
 const THEME = 'light' as const;
 const PLATFORM = 'ios' as const;
-const PROTOTYPE_MIN_HEIGHT = 874;
 const INITIAL_DESCRIPTION =
   'Небольшая студия, где мы делимся проектами,\nпроцессом и новостями команды.';
 
 interface PrototypeCssProperties extends CSSProperties {
   '--prototype-width': string;
-  '--prototype-min-height': string;
   '--prototype-page-padding': string;
   '--prototype-section-gap': string;
   '--prototype-field-gap': string;
@@ -54,7 +52,6 @@ export function VkProfileEditPrototypePage() {
   const platform = getPlatformTokens(PLATFORM);
   const style: PrototypeCssProperties = {
     '--prototype-width': `${platform.viewport.width}px`,
-    '--prototype-min-height': `${PROTOTYPE_MIN_HEIGHT}px`,
     '--prototype-page-padding': `${platform.size.basePaddingHorizontal}px`,
     '--prototype-section-gap': `${spacing.size4xl}px`,
     '--prototype-field-gap': `${spacing.size2xl}px`,
