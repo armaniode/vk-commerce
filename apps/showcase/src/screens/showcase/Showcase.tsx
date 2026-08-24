@@ -12,6 +12,7 @@ import { VkSegmentedControlPage } from './pages/VkSegmentedControlPage';
 import { VkSelectPage } from './pages/VkSelectPage';
 import { VkShowcaseHomePage } from './pages/VkShowcaseHomePage';
 import { VkTextareaPage } from './pages/VkTextareaPage';
+import { VkTopBarPage } from './pages/VkTopBarPage';
 import { VkUsersStackPage } from './pages/VkUsersStackPage';
 
 const VK_ROUTES: Record<string, () => ReactElement> = {
@@ -24,6 +25,7 @@ const VK_ROUTES: Record<string, () => ReactElement> = {
   '/vk-components/segmented-control': VkSegmentedControlPage,
   '/vk-components/select': VkSelectPage,
   '/vk-components/textarea': VkTextareaPage,
+  '/vk-components/top-bar': VkTopBarPage,
   '/vk-components/users-stack': VkUsersStackPage,
   '/vk-prototypes/profile-edit': VkProfileEditPrototypePage,
 };

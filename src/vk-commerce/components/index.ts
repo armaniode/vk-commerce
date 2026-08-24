@@ -48,6 +48,13 @@ export type {
   TextareaStatus,
 } from './textarea';
 
+export { TopBar } from './top-bar';
+export type {
+  TopBarActions,
+  TopBarAppearance,
+  TopBarProps,
+} from './top-bar';
+
 export { UsersStack } from './users-stack';
 export type {
   UsersStackProps,
