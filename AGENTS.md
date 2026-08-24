@@ -68,11 +68,12 @@
    - iOS system Status Bar / Home Indicator — системный chrome, убираем.
 7. Применять эти правила автоматически ко всем новым `#/vk-prototypes/*` без необходимости повторять их в каждом prompt.
 8. Высота mobile prototype root всегда определяется контентом:
-   - `874px` — reference/minimum prototype height, а не fixed height и не maximum height;
-   - если контент помещается, экран может оставаться высотой `874px`;
-   - если контенту требуется больше места, root автоматически растёт, а document/page прокручивается естественно;
-   - использовать поведение `min-height: 874px; height: auto;`;
-   - никогда не использовать `height: 874px`, `max-height: 874px` или `overflow: hidden`, чтобы принудительно уместить либо обрезать экран по reference viewport;
+   - `874px` — только reference viewport height для design/QA и не применяется к prototype root как minimum, fixed или maximum height;
+   - если контент короче `874px`, mobile surface заканчивается сразу после контента;
+   - если контенту требуется больше `874px`, root автоматически растёт, а document/page прокручивается естественно;
+   - использовать normal content flow с `height: auto; min-height: 0;` либо эквивалентным отсутствием height constraints;
+   - никогда не использовать `height: 874px`, `min-height: 874px`, `max-height: 874px`, viewport-based stretching (`height: 100vh` / `100dvh`) или `overflow: hidden`, чтобы принудительно растянуть, уместить либо обрезать prototype;
+   - ancestors не должны растягивать prototype через flex/grid stretch и не должны создавать внутренний device scroll через `overflow-y: auto`;
    - ширина prototype следует целевому mobile viewport, а итоговая высота всегда определяется содержимым.
 
 ## Skills
