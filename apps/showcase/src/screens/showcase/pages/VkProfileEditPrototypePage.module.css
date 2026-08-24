@@ -12,6 +12,7 @@
   width: 100%;
   max-width: var(--prototype-width);
   min-height: var(--prototype-min-height);
+  height: auto;
   flex-direction: column;
   font-family: var(--prototype-font-family);
   background: var(--prototype-page-background);
