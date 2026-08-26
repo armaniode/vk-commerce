@@ -71,6 +71,10 @@
         border-color: var(--figma-color-border-selected);
       }
 
+      #screen-spec {
+        min-height: 360px;
+      }
+
       .actions {
         display: flex;
         flex-wrap: wrap;
@@ -113,12 +117,25 @@
       #status.error {
         color: var(--figma-color-text-danger);
       }
+
+      .report {
+        max-height: 320px;
+        margin: 0;
+        overflow: auto;
+        padding: 10px;
+        color: var(--figma-color-text);
+        background: var(--figma-color-bg-secondary);
+        border-radius: 6px;
+        font: 11px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace;
+        white-space: pre-wrap;
+      }
     </style>
   </head>
   <body>
     <h1>VK DS Generator POC</h1>
     <p class="intro">
-      Extract published component keys, then create real library instances.
+      Extract published keys, create real instances, or compose a screen from
+      a structured specification.
     </p>
 
     <section class="mode" aria-labelledby="extract-title">
@@ -155,16 +172,94 @@
         <button id="create-instances" type="button">
           Create test instances
         </button>
+        <button id="inspect-registry" class="secondary" type="button">
+          Inspect real properties
+        </button>
         <button id="clear-registry" class="secondary" type="button">
           Clear
         </button>
       </div>
+      <h2>Actual component properties</h2>
+      <pre id="property-debug" class="report">Registry not inspected yet.</pre>
+    </section>
+
+    <section class="mode" aria-labelledby="screen-title">
+      <h2 id="screen-title">3. Create screen from spec</h2>
+      <p class="hint">
+        Uses the registry above. Every generated child is imported from its
+        published component key.
+      </p>
+      <textarea
+        id="screen-spec"
+        aria-label="Screen specification JSON"
+        spellcheck="false"
+      >{
+  "screen": {
+    "name": "Edit community",
+    "width": 393,
+    "children": [
+      {
+        "component": "Top Bar",
+        "props": {
+          "title": "Редактирование"
+        }
+      },
+      {
+        "component": "Avatar"
+      },
+      {
+        "component": "Form Fields",
+        "props": {
+          "label": "Название",
+          "value": "Моя студия"
+        }
+      },
+      {
+        "component": "Form Fields",
+        "props": {
+          "label": "Короткое имя",
+          "value": "mystudio"
+        }
+      },
+      {
+        "component": "Form Fields",
+        "props": {
+          "label": "Категория",
+          "value": "Дизайн и творчество"
+        }
+      },
+      {
+        "component": "Form Fields",
+        "props": {
+          "label": "Описание",
+          "value": "Небольшая студия, где мы делимся проектами, процессом и новостями команды."
+        }
+      },
+      {
+        "component": "Button",
+        "props": {
+          "text": "Сохранить изменения",
+          "stretched": true
+        }
+      }
+    ]
+  }
+}</textarea
+      >
+      <div class="actions">
+        <button id="create-screen" type="button">Create screen</button>
+      </div>
+      <h2>Generation report</h2>
+      <pre id="generation-report" class="report">No screen generated yet.</pre>
     </section>
 
     <div id="status" role="status" aria-live="polite">Ready.</div>
 
     <script>
       const registry = document.getElementById('registry');
+      const screenSpec = document.getElementById('screen-spec');
+      const propertyDebug = document.getElementById('property-debug');
+      const generationReport = document.getElementById('generation-report');
       const status = document.getElementById('status');
       const buttons = [...document.querySelectorAll('button')];
 
@@ -199,6 +294,76 @@
         }
       }
 
+      function formatGenerationReport(report) {
+        const lines = [
+          `${report.screenName} · ${report.width}px`,
+          `${report.createdInstances.length} real INSTANCE node(s) created`,
+          '',
+          'Requested children',
+        ];
+
+        for (const child of report.childResults) {
+          const childStatus =
+            child.status === 'created'
+              ? '✓ created'
+              : child.status === 'missing-registry-entry'
+                ? '✗ missing registry entry'
+                : '✗ import error';
+          lines.push(`${child.item}. ${child.component}: ${childStatus}`);
+          if (child.registryEntry) {
+            lines.push(`   registry: ${child.registryEntry}`);
+          }
+          if (child.reason) {
+            lines.push(`   reason: ${child.reason}`);
+          }
+
+          const applied = report.appliedProperties.filter(
+            (item) => item.item === child.item,
+          );
+          const skipped = report.skippedProperties.filter(
+            (item) => item.item === child.item,
+          );
+
+          for (const requestedProperty of child.requestedProperties) {
+            const propertyApplied = applied.filter(
+              (item) => item.requestedProperty === requestedProperty,
+            );
+            const propertySkipped = skipped.filter(
+              (item) => item.requestedProperty === requestedProperty,
+            );
+            const nestedOverride = propertyApplied.find(
+              (item) => item.method === 'text-override',
+            );
+            const propertyStatus = nestedOverride
+              ? '✓ applied via nested text override'
+              : propertyApplied.length
+                ? '✓ applied via component property'
+                : '✗ no valid target';
+            lines.push(`   ${requestedProperty}: ${propertyStatus}`);
+
+            for (const item of propertyApplied) {
+              lines.push(`     target: ${item.figmaProperty}`);
+              if (item.nodePath) {
+                lines.push(`     node path: ${item.nodePath}`);
+              }
+              if (item.fonts?.length) {
+                lines.push(`     font: ${item.fonts.join(', ')}`);
+              }
+            }
+            for (const item of propertySkipped) {
+              lines.push(`     reason: ${item.reason}`);
+            }
+          }
+        }
+
+        lines.push('', 'Registry name audit');
+        lines.push(JSON.stringify(report.registryEntries, null, 2));
+
+        lines.push('', 'Actual imported component inspection');
+        lines.push(JSON.stringify(report.inspectedComponents, null, 2));
+        return lines.join('\n');
+      }
+
       document.getElementById('build-registry').addEventListener('click', () => {
         send({ type: 'build-registry' });
       });
@@ -214,9 +379,24 @@
         });
       });
 
+      document.getElementById('inspect-registry').addEventListener('click', () => {
+        send({
+          type: 'inspect-registry-properties',
+          registryJson: registry.value,
+        });
+      });
+
       document.getElementById('clear-registry').addEventListener('click', () => {
         registry.value = '';
         setStatus('Registry cleared.');
+      });
+
+      document.getElementById('create-screen').addEventListener('click', () => {
+        send({
+          type: 'create-screen-from-spec',
+          registryJson: registry.value,
+          screenSpecJson: screenSpec.value,
+        });
       });
 
       window.addEventListener('message', (event) => {
@@ -240,6 +420,29 @@
         if (message.type === 'instances-created') {
           setStatus(
             `Created ${message.count} real library instance(s):\n${message.names.join(', ')}`,
+          );
+          return;
+        }
+
+        if (message.type === 'registry-inspected') {
+          propertyDebug.textContent = JSON.stringify(
+            {
+              components: message.components,
+              errors: message.errors,
+            },
+            null,
+            2,
+          );
+          setStatus(
+            `Inspected ${message.components.length} imported component(s).`,
+          );
+          return;
+        }
+
+        if (message.type === 'screen-generated') {
+          generationReport.textContent = formatGenerationReport(message.report);
+          setStatus(
+            `Screen generated with ${message.report.createdInstances.length} real library instance(s).`,
           );
           return;
         }

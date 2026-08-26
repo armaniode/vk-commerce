@@ -3,6 +3,7 @@ declare const __html__: string;
 type FigmaComponentPropertyType =
   | 'BOOLEAN'
   | 'INSTANCE_SWAP'
+  | 'SLOT'
   | 'TEXT'
   | 'VARIANT';
 
@@ -25,8 +26,25 @@ interface FigmaComponentProperty {
 }
 
 interface FigmaBaseNode {
+  readonly id: string;
   readonly type: string;
+  readonly parent: FigmaBaseNode | null;
   name: string;
+  remove(): void;
+}
+
+interface FigmaFontName {
+  readonly family: string;
+  readonly style: string;
+}
+
+interface FigmaTextNode extends FigmaBaseNode {
+  readonly type: 'TEXT';
+  characters: string;
+  readonly hasMissingFont: boolean;
+  getStyledTextSegments(
+    fields: readonly ['fontName'],
+  ): Array<{ readonly fontName: FigmaFontName }>;
 }
 
 interface FigmaComponentSetNode extends FigmaBaseNode {
@@ -50,22 +68,31 @@ interface FigmaComponentNode extends FigmaBaseNode {
 
 interface FigmaInstanceNode extends FigmaBaseNode {
   readonly type: 'INSTANCE';
+  readonly width: number;
+  readonly height: number;
   readonly componentProperties: Readonly<Record<string, FigmaComponentProperty>>;
+  layoutSizingHorizontal: 'FIXED' | 'HUG' | 'FILL';
+  findAllWithCriteria(criteria: { types: readonly ['TEXT'] }): FigmaTextNode[];
   getMainComponentAsync(): Promise<FigmaComponentNode | null>;
+  setProperties(properties: Record<string, string | boolean>): void;
 }
 
 type FigmaSceneNode =
   | FigmaInstanceNode
-  | (FigmaBaseNode & { readonly type: Exclude<string, 'INSTANCE'> });
+  | FigmaTextNode
+  | (FigmaBaseNode & { readonly type: Exclude<string, 'INSTANCE' | 'TEXT'> });
 
 interface FigmaFrameNode extends FigmaBaseNode {
   readonly type: 'FRAME';
   readonly width: number;
+  readonly height: number;
   x: number;
   y: number;
+  clipsContent: boolean;
   layoutMode: 'NONE' | 'HORIZONTAL' | 'VERTICAL';
   primaryAxisSizingMode: 'FIXED' | 'AUTO';
   counterAxisSizingMode: 'FIXED' | 'AUTO';
+  counterAxisAlignItems: 'MIN' | 'MAX' | 'CENTER' | 'BASELINE';
   itemSpacing: number;
   paddingTop: number;
   paddingRight: number;
@@ -73,6 +100,7 @@ interface FigmaFrameNode extends FigmaBaseNode {
   paddingLeft: number;
   fills: readonly unknown[];
   appendChild(node: FigmaSceneNode): void;
+  resize(width: number, height: number): void;
 }
 
 interface FigmaPageNode {
@@ -93,12 +121,14 @@ interface FigmaPluginApi {
   readonly currentPage: FigmaPageNode;
   readonly ui: FigmaPluginUi;
   readonly viewport: FigmaViewport;
+  skipInvisibleInstanceChildren: boolean;
   showUI(
     html: string,
     options: { width: number; height: number; themeColors?: boolean },
   ): void;
   createFrame(): FigmaFrameNode;
   importComponentByKeyAsync(key: string): Promise<FigmaComponentNode>;
+  loadFontAsync(fontName: FigmaFontName): Promise<void>;
   notify(message: string, options?: { error?: boolean; timeout?: number }): void;
 }
 
