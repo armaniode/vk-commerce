@@ -1,0 +1,12 @@
+{
+  "name": "vk-figma-ds-generator-experiment",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "check": "tsc --project tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

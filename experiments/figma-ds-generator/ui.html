@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VK DS Generator POC</title>
+    <style>
+      :root {
+        color: var(--figma-color-text);
+        background: var(--figma-color-bg);
+        font: 12px/1.4 Inter, system-ui, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 16px;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 16px;
+        line-height: 1.3;
+      }
+
+      h2 {
+        font-size: 13px;
+        line-height: 1.3;
+      }
+
+      .intro {
+        margin-top: 6px;
+        color: var(--figma-color-text-secondary);
+      }
+
+      .mode {
+        display: grid;
+        gap: 10px;
+        margin-top: 16px;
+        padding: 12px;
+        border: 1px solid var(--figma-color-border);
+        border-radius: 8px;
+      }
+
+      .hint {
+        color: var(--figma-color-text-secondary);
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 260px;
+        resize: vertical;
+        padding: 10px;
+        color: var(--figma-color-text);
+        background: var(--figma-color-bg-secondary);
+        border: 1px solid var(--figma-color-border);
+        border-radius: 6px;
+        outline: none;
+        font: 11px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+
+      textarea:focus {
+        border-color: var(--figma-color-border-selected);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      button {
+        min-height: 32px;
+        padding: 0 12px;
+        color: var(--figma-color-text-onbrand);
+        background: var(--figma-color-bg-brand);
+        border: 0;
+        border-radius: 6px;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      button.secondary {
+        color: var(--figma-color-text);
+        background: var(--figma-color-bg-secondary);
+        border: 1px solid var(--figma-color-border);
+      }
+
+      button:disabled {
+        cursor: default;
+        opacity: 0.45;
+      }
+
+      #status {
+        min-height: 34px;
+        margin-top: 12px;
+        padding: 8px 10px;
+        color: var(--figma-color-text-secondary);
+        background: var(--figma-color-bg-secondary);
+        border-radius: 6px;
+        white-space: pre-wrap;
+      }
+
+      #status.error {
+        color: var(--figma-color-text-danger);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>VK DS Generator POC</h1>
+    <p class="intro">
+      Extract published component keys, then create real library instances.
+    </p>
+
+    <section class="mode" aria-labelledby="extract-title">
+      <h2 id="extract-title">1. Build registry from selection</h2>
+      <p class="hint">
+        Select real component instances on the current Figma page.
+      </p>
+      <div class="actions">
+        <button id="build-registry" type="button">Build registry</button>
+        <button id="copy-registry" class="secondary" type="button">
+          Copy JSON
+        </button>
+      </div>
+    </section>
+
+    <section class="mode" aria-labelledby="create-title">
+      <h2 id="create-title">2. Create test instances</h2>
+      <p class="hint">
+        Paste registry JSON below. The POC imports and creates the first three
+        valid entries.
+      </p>
+      <textarea
+        id="registry"
+        aria-label="Component registry JSON"
+        spellcheck="false"
+        placeholder='{
+  "Button": {
+    "figmaKey": "published-component-key",
+    "properties": []
+  }
+}'
+      ></textarea>
+      <div class="actions">
+        <button id="create-instances" type="button">
+          Create test instances
+        </button>
+        <button id="clear-registry" class="secondary" type="button">
+          Clear
+        </button>
+      </div>
+    </section>
+
+    <div id="status" role="status" aria-live="polite">Ready.</div>
+
+    <script>
+      const registry = document.getElementById('registry');
+      const status = document.getElementById('status');
+      const buttons = [...document.querySelectorAll('button')];
+
+      function send(pluginMessage) {
+        parent.postMessage({ pluginMessage }, '*');
+      }
+
+      function setStatus(message, isError = false) {
+        status.textContent = message;
+        status.classList.toggle('error', isError);
+      }
+
+      function setBusy(busy) {
+        buttons.forEach((button) => {
+          button.disabled = busy;
+        });
+      }
+
+      async function copyRegistry() {
+        if (!registry.value.trim()) {
+          setStatus('Nothing to copy.', true);
+          return;
+        }
+
+        try {
+          await navigator.clipboard.writeText(registry.value);
+          setStatus('Registry JSON copied.');
+        } catch {
+          registry.select();
+          document.execCommand('copy');
+          setStatus('Registry JSON copied.');
+        }
+      }
+
+      document.getElementById('build-registry').addEventListener('click', () => {
+        send({ type: 'build-registry' });
+      });
+
+      document.getElementById('copy-registry').addEventListener('click', () => {
+        void copyRegistry();
+      });
+
+      document.getElementById('create-instances').addEventListener('click', () => {
+        send({
+          type: 'create-test-instances',
+          registryJson: registry.value,
+        });
+      });
+
+      document.getElementById('clear-registry').addEventListener('click', () => {
+        registry.value = '';
+        setStatus('Registry cleared.');
+      });
+
+      window.addEventListener('message', (event) => {
+        const message = event.data.pluginMessage;
+        if (!message) return;
+
+        if (message.type === 'busy') {
+          setBusy(message.busy);
+          return;
+        }
+
+        if (message.type === 'registry-built') {
+          registry.value = message.registryJson;
+          const warningText = message.warnings.length
+            ? `\nWarnings:\n- ${message.warnings.join('\n- ')}`
+            : '';
+          setStatus(`Registry contains ${message.count} component(s).${warningText}`);
+          return;
+        }
+
+        if (message.type === 'instances-created') {
+          setStatus(
+            `Created ${message.count} real library instance(s):\n${message.names.join(', ')}`,
+          );
+          return;
+        }
+
+        if (message.type === 'error') {
+          setStatus(message.message, true);
+        }
+      });
+    </script>
+  </body>
+</html>
